@@ -12,7 +12,10 @@ hero:
       text: Accueil
       link: /home
     - theme: alt
-      text: Markdown Examples
-      link: /api-examples
+      text: Présentation du service
+      link: /presentation
+    - theme: alt
+      text: Puzzle54
+      link: /puzzle54
 ---
 
