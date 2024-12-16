@@ -25,24 +25,28 @@ const props = defineProps({
     font-size: var(--vp-custom-block-font-size);
     border-left: 5px solid;
     border-radius: 5px;
+    background-color: whitesmoke;
     overflow: hidden;
+}
+
+
+.dark .container {
+    background-color: var(--vp-custom-block-info-bg);
 }
 
 .info {
     border-left-color: #00b8d4;
-    background-color: var(--vp-custom-block-info-bg);
 
     .container-title {
-        background-color: #00b8d41a;
+        background-color: rgba(0, 184, 212, 0.2);
     }
 }
 
 .warning {
     border-left-color: #ff9100;
-    background-color: var(--vp-custom-block-warning-bg);
 
     .container-title {
-        background-color: #ff91001a;
+        background-color: rgba(255, 145, 0, 0.2);
     }
 }
 

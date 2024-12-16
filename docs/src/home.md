@@ -1,7 +1,7 @@
 # Accueil
 
 <script setup>
-import TestComponent from '/components/TestComponent.vue'
+import CustomContainer from '/components/CustomContainer.vue'
 </script>
 
 Bienvenue sur mon rapport d'alternance pour ma troisième année de BUT Informatique à l'IUT Nancy-Charlemagne.
@@ -19,15 +19,15 @@ Dans la partie **Projets**, je présente les différents projets sur lesquels j'
 Cette partie comporte une section **Améliorations** où je présente les améliorations que j'ai apportées à des projets existants,
 et une section **Créations** où je présente les projets que j'ai créés pour le service.
 
-<test-component type="info">
+<custom-container type="info">
 <ul>
     <li><strong>Entreprise/Service</strong> : Conseil Départemental de Meurthe-et-Moselle</li>
     <li><strong>Alternant</strong> : Weier Loris</li>
     <li><strong>Maître d'apprentissage</strong> : Hervé Vitoux</li>
     <li><strong>Tuteur universitaire</strong> : Boumaza Amine</li>
 </ul>
-</test-component>
+</custom-container>
 
-<test-component type="warning">
+<custom-container type="warning">
 <p>Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes.</p>
-</test-component>
+</custom-container>
