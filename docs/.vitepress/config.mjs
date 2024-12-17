@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import footnotes from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,7 +10,14 @@ export default defineConfig({
     ],
     title: "Rapport d'alternance",
     description: "Mon rapport d'alternance pour ma troisième année de BUT Informatique",
+    markdown: {
+        config: (md) => {
+            md.use(footnotes)
+        }
+    },
     themeConfig: {
+
+        outline: 'deep',
 
         logo: "/logo.png",
 

@@ -4,7 +4,7 @@
 import CustomContainer from '/components/CustomContainer.vue'
 </script>
 
-Bienvenue sur mon rapport d'alternance pour ma troisième année de BUT Informatique à l'IUT Nancy-Charlemagne.
+Bienvenue sur mon rapport d'alternance pour ma troisième année de BUT Informatique[^1] à l'IUT Nancy-Charlemagne.
 
 Ce site est un support pour mon rapport d'alternance. 
 Il contient des informations sur mon entreprise d'accueil, mes missions, les compétences acquises, etc.
@@ -31,3 +31,6 @@ et une section **Créations** où je présente les projets que j'ai créés pour
 <custom-container type="warning">
 <p>Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes.</p>
 </custom-container>
+
+[^1]: Le Brevet Universitaire de Technologie forme en 3 ans les informaticiens qui participent à **la conception, 
+la réalisation et la mise en œuvre de solutions informatiques** répondant aux besoins de transformation numérique des organisations.
