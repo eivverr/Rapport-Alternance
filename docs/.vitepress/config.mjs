@@ -65,7 +65,6 @@ export default defineConfig({
             },
             {
                 items: [
-                    { text: 'Conclusion', link: '/conclusion' },
                     { text: 'Annexe', link: '/annexe' }
                 ]
             }

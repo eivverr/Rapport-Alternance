@@ -39,4 +39,9 @@ Chaque direction est elle-même divisée en services départementaux qui se foca
 
 ## Le service SIG du pôle Développement
 
+Le service SIG est chargé de mettre à disposition des **outils cartographiques** tels que des **cartes**, 
+des **jeux de données** ou des **applications web** à destination des autres services du Conseil Départemental, des communes du département de Meurthe-et-Moselle ou du grand public.
+
+Vous retrouverez toutes leurs réalisations publiques sur le site [webcarto.infogeo54.fr](https://webcarto.infogeo54.fr/).
+
 <iframe src="/Org_Developpement.pdf" width="100%" height="500px"></iframe>

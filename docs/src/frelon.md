@@ -32,7 +32,6 @@ Mes missions sur ce projet ont été les suivantes :
 - [Adaptation d'éléments de l'interface pour les écrans mobiles](#adaptation-d-elements-de-l-interface-pour-les-ecrans-mobiles)
     - [Boutons](#boutons)
     - [Formulaire](#formulaire)
-- [Amélioration de certains éléments visuels](#amelioration-de-certains-elements-visuels)
 
 ## Améliorations
 
@@ -58,20 +57,19 @@ Pour adapter l'interface pour les écrans mobiles, j'ai dû modifier certains é
 Les boutons de l'interface n'étaient pas adaptés pour les écrans mobiles, ils étaient trop grands et prenaient donc trop de place sur l'écran.
 J'ai dû réduire la taille des boutons pour qu'ils s'affichent correctement sur les écrans mobiles, tout en faisant attention à ce qu'ils ne soient pas trop petits pour être cliquables.
 
-<img style="margin: 0 auto" src="/frelon_capture_boutons.PNG?url">
+<div style="display: flex; align-items: center; justify-content: space-around">
+  <img src="/frelon_capture_boutons_2.PNG?url">
+  <img src="/frelon_capture_boutons.PNG?url">
+</div>
 
 #### Formulaire
 
 Avec **Lizmap**, les formulaires s'affichent sur le côté de l'écran, or cela n'est pas pratique pour les écrans mobiles.
 J'ai donc dû modifier le style du formulaire pour qu'il prenne toute la largeur de l'écran, et qu'il soit plus facile à remplir sur les écrans mobiles.
+Ensuite, lors d'un affichage d'un formulaire avec **Lizmap**, le bouton pour fermer le formulaire est une flèche qui vas vers la droite, ce qui n'est pas très intuitif en format mobile.
+J'ai donc remplacé cette flèche par une simple croix pour fermer le formulaire.
 
 <img style="margin: 0 auto" src="/frelon_capture_form.PNG?url">
-
-### Amélioration de certains éléments visuels
-
-J'ai corrigé la manière d'afficher une image sur les boutons qui, certes fonctionnait, mais n'était pas optimale.
-Ensuite, lors d'un affichage d'un formulaire avec **Lizmap**, le bouton pour fermer le formulaire est une flèche qui vas vers la droite, ce qui n'est pas très intuitif en format mobile.
-J'ai donc remplacé cette flèche par une simple croix pour fermer le formulaire *(voir l'[image](#formulaire) du formulaire)*.
 
 [^1]: **Bootstrap** est un **framework** utile à la création du design (graphisme, animation et interactions avec la page dans le navigateur, etc.) de sites et d'applications web. 
 C'est un ensemble qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option.

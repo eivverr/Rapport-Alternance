@@ -4,6 +4,10 @@
 import CustomContainer from '/components/CustomContainer.vue'
 </script>
 
+<custom-container type="warning">
+<p>Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes.</p>
+</custom-container>
+
 Bienvenue sur mon rapport d'alternance pour ma troisième année de BUT Informatique[^1] à l'IUT Nancy-Charlemagne.
 
 Ce site est un support pour mon rapport d'alternance. 
@@ -18,6 +22,8 @@ et le logiciel [Lizmap](https://www.lizmap.com/) qui est utilisé au sein de ce 
 Dans la partie **Projets**, je présente les différents projets sur lesquels j'ai travaillé durant mon alternance.
 Cette partie comporte une section **Améliorations** où je présente les améliorations que j'ai apportées à des projets existants,
 et une section **Créations** où je présente les projets que j'ai créés pour le service.
+Dans cette partie, je ne présenterai qu'en détail les projets que j'ai créés, car il y a plus de choses à dire sur ces projets.
+Tandis que pour les projets sur lesquels j'ai apporté des améliorations, en général, je n'ai fait que des modifications visuelles donc je n'aurai pas grand chose à dire dessus.
 
 <custom-container type="info">
 <ul>
@@ -26,10 +32,6 @@ et une section **Créations** où je présente les projets que j'ai créés pour
     <li><strong>Maître d'apprentissage</strong> : Hervé Vitoux</li>
     <li><strong>Tuteur universitaire</strong> : Boumaza Amine</li>
 </ul>
-</custom-container>
-
-<custom-container type="warning">
-<p>Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes.</p>
 </custom-container>
 
 [^1]: Le Brevet Universitaire de Technologie forme en 3 ans les informaticiens qui participent à **la conception, 

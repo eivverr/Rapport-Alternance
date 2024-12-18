@@ -20,7 +20,7 @@ Mes missions sur ce projet ont été les suivantes :
 - Ajout des niveaux de zoom sur les éléments de la carte
     - Zoom sur les points d'intérêt avec le niveau de zoom
     - Zoom sur le circuit avec le niveau de zoom au lancement de la carte
-- Réglage des boutons de navigation (suivant et précédent)
+- Réglage du système de navigation
 - Amélioration de l'affichage des points d'intérêt
 
 ## Améliorations

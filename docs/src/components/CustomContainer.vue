@@ -8,11 +8,17 @@ const props = defineProps({
     <div class="container"
          :class="{
             'info': type === 'info',
-            'warning': type === 'warning'
+            'warning': type === 'warning',
+            'danger': type === 'danger'
          }">
-        <p class="container-title">
-            {{type}}
-        </p>
+        <div class="container-title">
+            <img :src="{
+                'info': '/icons/info-icon.svg',
+                'warning': '/icons/warning-icon.svg',
+                'danger': '/icons/danger-icon.svg'
+            }[type]" alt="{{type}}" />
+            <p>{{type}}</p>
+        </div>
         <div class="content">
             <slot />
         </div>
@@ -20,15 +26,20 @@ const props = defineProps({
 </template>
 
 <style scoped>
+:root {
+    --custom-block-info-color: #00b8d4;
+    --custom-block-warning-color: #ff9100;
+    --custom-block-danger-color: #ff0000;
+}
+
 .container {
     margin: 16px 0;
     font-size: var(--vp-custom-block-font-size);
     border-left: 5px solid;
     border-radius: 5px;
-    background-color: whitesmoke;
+    box-shadow: 5px 7px 15px rgba(0,0,0,0.1);
     overflow: hidden;
 }
-
 
 .dark .container {
     background-color: var(--vp-custom-block-info-bg);
@@ -38,7 +49,7 @@ const props = defineProps({
     border-left-color: #00b8d4;
 
     .container-title {
-        background-color: rgba(0, 184, 212, 0.2);
+        color: #00b8d4;
     }
 }
 
@@ -46,7 +57,15 @@ const props = defineProps({
     border-left-color: #ff9100;
 
     .container-title {
-        background-color: rgba(255, 145, 0, 0.2);
+        color: #ff9100;
+    }
+}
+
+.danger {
+    border-left-color: #ff0000;
+
+    .container-title {
+        color: #ff0000;
     }
 }
 
@@ -56,8 +75,14 @@ const props = defineProps({
     gap: 10px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 16px;
+    padding: 10px 16px 0;
     margin: 0;
+    height: 50px;
+}
+
+.container-title img {
+    width: 25px;
+    height: 25px;
 }
 
 .content {
