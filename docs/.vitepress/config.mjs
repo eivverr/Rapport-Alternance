@@ -19,13 +19,14 @@ export default defineConfig({
 
         outline: 'deep',
 
-        logo: "/logo.png",
+        logo: "/img/logo.png",
 
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Accueil', link: '/home' },
             { text: 'Introduction', link: '/presentation' },
-            { text: 'Projets', link: '/frelon' }
+            { text: 'Projets', link: '/frelon' },
+            { text: 'Annexe', link: '/liens' }
         ],
 
         search: {
@@ -50,6 +51,7 @@ export default defineConfig({
                 items: [
                     {
                         text: 'Améliorations',
+                        collapsed: false,
                         items: [
                             { text: 'Frelon signalement', link: '/frelon' },
                             { text: 'Maptour', link: '/maptour' }
@@ -57,15 +59,33 @@ export default defineConfig({
                     },
                     {
                         text: 'Créations',
+                        collapsed: false,
                         items: [
-                            { text: 'Puzzle54', link: '/puzzle54' }
+                            {
+                                text: 'Puzzle54',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Introduction', link: '/puzzle54/intro' },
+                                    { text: 'Veille technologique', link: '/puzzle54/veille_techno' },
+                                    { text: 'Réalisation', link: '/puzzle54/realisation' },
+                                    { text: 'Fonctionnalités supplémentaires', link: '/puzzle54/fonctionnalites_sup' }
+                                ]
+                            }
                         ]
                     }
                 ]
             },
             {
+                text: 'Annexe',
                 items: [
-                    { text: 'Annexe', link: '/annexe' }
+                    { text: 'Liens', link: '/liens' },
+                    {
+                        text: 'Codes',
+                        collapsed: false,
+                        items: [
+                            { text: 'Puzzle54', link: '/codes/puzzle54' }
+                        ]
+                    }
                 ]
             }
         ],

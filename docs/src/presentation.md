@@ -3,7 +3,7 @@
 Le **Conseil départemental de Meurthe-et-Moselle** est une **collectivité locale**, comme la commune et le conseil régional. 
 Son champ d'action est le département.
 
-<img style="margin: 0 auto;" src="/meurthe-et-moselle.png?url" width="200">
+<img style="margin: 0 auto;" src="/img/meurthe-et-moselle.png?url" width="200">
 
 Sa création remonte au 19<sup>ème</sup> siècle. Il devient une assemblée autonome à partir de 1982, lorsque l'État décide de décentraliser une partie de ses missions et de les confier, dans des domaines bien définis, aux conseils généraux. En 2015, les conseils généraux sont devenus les conseils départementaux.
 
@@ -35,7 +35,7 @@ Pour s'occuper au mieux des différentes thématiques dans lesquelles il est eng
 
 Chaque direction est elle-même divisée en services départementaux qui se focalisent sur une thématique précise.
 
-<iframe src="/Org_General.pdf" width="100%" height="500px"></iframe>
+<iframe src="/pdf/Org_General.pdf" width="100%" height="500px"></iframe>
 
 ## Le service SIG du pôle Développement
 
@@ -44,4 +44,4 @@ des **jeux de données** ou des **applications web** à destination des autres s
 
 Vous retrouverez toutes leurs réalisations publiques sur le site [webcarto.infogeo54.fr](https://webcarto.infogeo54.fr/).
 
-<iframe src="/Org_Developpement.pdf" width="100%" height="500px"></iframe>
+<iframe src="/pdf/Org_Developpement.pdf" width="100%" height="500px"></iframe>

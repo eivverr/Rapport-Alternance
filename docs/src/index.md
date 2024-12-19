@@ -6,7 +6,7 @@ hero:
   name: "WEIER Loris"
   text: "Rapport d'alternance"
   tagline: Mon rapport d'alternance pour ma troisième année de BUT Informatique
-  image: /meurthe-et-moselle.png
+  image: /img/meurthe-et-moselle.png
   actions:
     - theme: brand
       text: Accueil
