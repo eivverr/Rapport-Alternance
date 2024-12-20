@@ -46,8 +46,7 @@ Sur l'interface de la version **Admin** du projet, il y a un bouton **Aide** qui
 Elle montre aussi comment ajouter une présence de frelons ou un piège à frelons sur la carte.
 
 Cependant, cette popup n'était pas adaptée pour les écrans mobiles, elle était trop grande et ne s'affichait pas correctement.
-Le problème était que l'ancien alternant, qui n'était pas un développeur web, n'avait pas compris que **Lizmap** intègre [Bootstrap](https://getbootstrap.com/),
-un **framework CSS** qui permet de créer des sites web facilement, 
+Le problème était que l'ancien alternant, qui n'était pas un développeur web, n'avait pas compris que **Lizmap** intègre Bootstrap[^1], 
 et donc il y avait des conflits entre les différents styles CSS, celui de **Bootstrap** et celui ajouté par l'ancien alternant.
 
 J'ai donc dû adapter le style de la popup pour qu'elle s'affiche correctement sur les écrans mobiles, tout en prenant en compte les styles de **Bootstrap**.
@@ -88,3 +87,6 @@ Mon maître d'apprentissage m'a demandé de modifier cette popup pour qu'elle so
 Mettre vidéo de démonstration de l'amélioration de la popup des couches
 </p>
 </custom-container>
+
+[^1]: **Bootstrap** est un **framework CSS** qui permet de créer des sites web facilement en intégrant des composants prédéfinis et des styles CSS prédéfinis.
+Il a été créé par **Twitter** en 2011 et est **open-source**. Plus d'informations sur [le site officiel de Bootstrap](https://getbootstrap.com/).

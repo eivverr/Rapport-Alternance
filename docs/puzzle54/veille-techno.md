@@ -14,11 +14,12 @@ Si possible, il fallait aussi trouver des exemples de projets similaires pour vo
 
 ### Exemple de projet similaires existants
 
-Par hasard en se baladant sur internet, mon maître d'apprentissage a trouvé un projet de **puzzle en ligne** qui ressemblait à ce que l'on voulait faire.
-Ce [site](http://ol-puzzle.s3-website-eu-west-1.amazonaws.com/) correspond exactement à ce que l'on voulait faire, un puzzle en ligne avec des **données géographiques**.
+Par hasard en se baladant sur internet, mon maître d'apprentissage a trouvé un [projet de puzzle en ligne](http://ol-puzzle.s3-website-eu-west-1.amazonaws.com/) 
+qui ressemble à ce que l'on voulait faire.
+Il me serra utile pour me servir de référence. 
 
 Ce projet a été réalisé avec la bibliothèque **OpenLayers**, c'est d'ailleurs ce qu'utilise **Lizmap** pour afficher les cartes, 
-ce qui pourrait potentiellement permettre de surcharger un projet **Lizmap** pour ajouter un projet **OpenLayers** (spoiler : non, ça ne fonctionne pas).
+ce qui pourrait potentiellement permettre de surcharger un projet **Lizmap** pour ajouter une carte **OpenLayers** (spoiler : non, ça ne fonctionne pas).
 
 On décide donc d'utiliser **OpenLayers** pour réaliser le projet.
 
@@ -27,8 +28,8 @@ On décide donc d'utiliser **OpenLayers** pour réaliser le projet.
 <img style="margin: 0 auto" src="/img/openlayers.png?url">
 
 Développé le 26 juin 2006 par la [Fondation Open Source Geospatial](https://www.osgeo.org/) (organisation non gouvernementale fondée en 2006), 
-**OpenLayers** est une bibliothèque **JavaScript** **open source** qui permet d'afficher des **cartes interactives** dans un navigateur web.
-Cette bibliothèque est sous [license BSD](https://fr.wikipedia.org/wiki/Licence_BSD), ce qui signifie que l'on peut réutiliser tout ou une partie du logiciel sans restriction, qu'il soit pour un usage commercial ou non.
+[OpenLayers](https://openlayers.org/) est une bibliothèque **JavaScript** **open source** qui permet d'afficher des **cartes interactives** dans un navigateur web.
+Cette bibliothèque est sous **license BSD**[^1], ce qui signifie que l'on peut réutiliser tout ou une partie du logiciel sans restriction, qu'il soit pour un usage commercial ou non.
 
 Il a longtemps été utilisé par [OpenStreetMap](https://www.openstreetmap.org/#map=6/46.45/2.21), 
 un projet **collaboratif** de **cartographie en ligne** qui vise à constituer une base de données géographiques libre du monde,
@@ -37,9 +38,7 @@ qui utilise maintenant [Leaflet](https://leafletjs.com/), une autre bibliothèqu
 **OpenLayers** est une bibliothèque **très complète**, elle permet de réaliser des cartes **interactives** avec des **données géographiques** (GeoRSS, KML, GML, GeoJSON, etc.).
 Le logiciel possède également une [API](https://openlayers.org/en/latest/apidoc/) est une [documentation](https://openlayers.org/doc/) très complète, 
 ainsi que de nombreux [exemples](https://openlayers.org/en/latest/examples/) pour apprendre à l'utiliser, ce qui facilite **énormément** son utilisation (contrairement à **Lizmap**...).
-
-En plus ça tombe bien, les données de l'**api** sont en [GeoJSON](https://fr.wikipedia.org/wiki/GeoJSON), 
-un format de données ouvert basé sur le **JSON** qui permet de représenter des données géographiques.
+En plus ça tombe bien, les données de l'**api** sont en GeoJSON[^2].
 
 ### Apprendre à utiliser OpenLayers
 
@@ -107,3 +106,10 @@ function initOpenLayersMap() {
 **Démo d'OpenLayers** avec le code ci-dessus :
 
 <openlayers-demo/>
+
+[^1]: La **license BSD** (Berkeley Software Distribution License) est une licence libre utilisée pour la distribution de logiciels. 
+Elle permet de réutiliser tout ou une partie du logiciel sans restriction, qu'il soit intégré dans un logiciel **libre** ou **propriétaire**.
+
+[^2]: **GeoJSON** est un format ouvert d'encodage d'ensemble de données géospatiales simples utilisant la norme **JSON**.
+Il permet de décrire des données de type **point**, **ligne**, **chaîne de caractères**, **polygone**, 
+ainsi que des ensembles et sous-ensembles de ces types de données et d'y ajouter des attributs d'information qui ne sont pas spatiales.

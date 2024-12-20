@@ -1,4 +1,5 @@
 ---
+prev: 'Puzzle54 | Fonctionnalités supplémentaires'
 next: 'Codes | Puzzle54'
 ---
 
@@ -6,20 +7,14 @@ next: 'Codes | Puzzle54'
 
 ## Liens utiles
 
-- 3Liz : [3liz.com](https://www.3liz.com/)
 - Bootstrap : [getbootstrap.com](https://getbootstrap.com/)
 - Bootstrap Modal : [getbootstrap.com/docs/5.3/components/modal](https://getbootstrap.com/docs/5.3/components/modal/)
-- Conseil Départemental de Meurthe-et-Moselle : [meurthe-et-moselle.fr](https://www.meurthe-et-moselle.fr/)
-- Fondation Open Source Geospatial : [osgeo.org](https://www.osgeo.org/)
-- IUT Nancy-Charlemagne : [iut-charlemagne.univ-lorraine.fr](https://iut-charlemagne.univ-lorraine.fr/)
 - QGIS : [qgis.org](https://www.qgis.org/)
-- Leaflet : [leafletjs.com](https://leafletjs.com/)
 - Lizmap : [lizmap.com](https://www.lizmap.com/)
 - OpenLayers : [openlayers.org](https://openlayers.org/)
 - OpenLayers API : [openlayers.org/en/latest/apidoc](https://openlayers.org/en/latest/apidoc/)
 - OpenLayers Documentation : [openlayers.org/doc](https://openlayers.org/doc/)
 - OpenLayers Examples : [openlayers.org/en/latest/examples](https://openlayers.org/en/latest/examples/)
-- OpenStreetMap : [openstreetmap.org](https://www.openstreetmap.org/)
 - VitePress : [vitepress.vuejs.org](https://vitepress.vuejs.org/)
 - Vue.js : [v3.vuejs.org](https://v3.vuejs.org/)
 - Webcarto : [webcarto.infogeo54.fr](https://webcarto.infogeo54.fr/)
@@ -36,6 +31,16 @@ next: 'Codes | Puzzle54'
 - OpenStreetMap : [wikipedia.org/wiki/OpenStreetMap](https://fr.wikipedia.org/wiki/OpenStreetMap)
 - Leaflet : [wikipedia.org/wiki/Leaflet](https://fr.wikipedia.org/wiki/Leaflet)
 - License BSD : [wikipedia.org/wiki/Licence_BSD](https://fr.wikipedia.org/wiki/Licence_BSD)
+- Vue.js : [wikipedia.org/wiki/Vue.js](https://fr.wikipedia.org/wiki/Vue.js)
+
+### Autres
+
+- 3Liz : [3liz.com](https://www.3liz.com/)
+- Conseil Départemental de Meurthe-et-Moselle : [meurthe-et-moselle.fr](https://www.meurthe-et-moselle.fr/)
+- Fondation Open Source Geospatial : [osgeo.org](https://www.osgeo.org/)
+- IUT Nancy-Charlemagne : [iut-charlemagne.univ-lorraine.fr](https://iut-charlemagne.univ-lorraine.fr/)
+- Leaflet : [leafletjs.com](https://leafletjs.com/)
+- OpenStreetMap : [openstreetmap.org](https://www.openstreetmap.org/)
 
 ## Liens vers les projets
 

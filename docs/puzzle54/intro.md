@@ -2,11 +2,11 @@
 prev: 'Améliorations | Maptour'
 ---
 
-# Puzzle54
-
 <script setup>
 import CustomContainer from '/components/CustomContainer.vue'
 </script>
+
+# Puzzle54
 
 <custom-container type="info">
 <p><a target="_blank" href="https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=puzzle_cd54">Lien vers le projet</a></p>
@@ -14,7 +14,7 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 ## Introduction
 
-J'ai réalisé **seul** ce projet (sauf pour les données de l'**api**), il a été réalisé en **JavaScript** avec la bibliothèque [OpenLayers](https://openlayers.org/),
+J'ai réalisé **seul** ce projet (sauf pour les données de l'**api**), il a été réalisé en **JavaScript** avec la bibliothèque [OpenLayers](/puzzle54/veille-techno#presentation-d-openlayers),
 une bibliothèque **JavaScript open source** qui permet de créer des **cartes interactives** dans un navigateur web.
 
 ### Objectif du projet
