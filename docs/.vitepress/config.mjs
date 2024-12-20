@@ -3,7 +3,6 @@ import footnotes from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    srcDir: './src',
     cleanUrls: true,
     head: [
         ['link', { rel: 'icon', href: '/logo.png' }]
@@ -66,9 +65,9 @@ export default defineConfig({
                                 collapsed: true,
                                 items: [
                                     { text: 'Introduction', link: '/puzzle54/intro' },
-                                    { text: 'Veille technologique', link: '/puzzle54/veille_techno' },
+                                    { text: 'Veille technologique', link: '/puzzle54/veille-techno' },
                                     { text: 'Réalisation', link: '/puzzle54/realisation' },
-                                    { text: 'Fonctionnalités supplémentaires', link: '/puzzle54/fonctionnalites_sup' }
+                                    { text: 'Fonctionnalités supplémentaires', link: '/puzzle54/fonctionnalites-sup' }
                                 ]
                             }
                         ]

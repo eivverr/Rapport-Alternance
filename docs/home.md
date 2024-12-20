@@ -13,12 +13,14 @@ Ce site est en cours de construction. Certaines parties ne sont pas encore dispo
 
 Bienvenue sur mon rapport d'alternance pour ma troisième année de BUT Informatique[^1] à l'[IUT Nancy-Charlemagne](https://iut-charlemagne.univ-lorraine.fr/).
 
-Ce site est un support pour mon rapport d'alternance. 
-Il contient des informations sur mon **entreprise d'accueil**, mes **missions**, les **compétences acquises**, etc.
+Ce site est un support pour mon rapport d'alternance, il contient des informations sur mon **entreprise d'accueil**, mes **missions**, les **compétences acquises**, etc.
+Je l'ai réalisé avec [VitePress](https://vitepress.vuejs.org/), un générateur de site statique pour [Vue.js](https://v3.vuejs.org/).
+
+Cela me permettra de présenter mon rapport d'alternance de manière plus **interactive**, notamment en intégrant des **démonstrations** de code grâces aux **composants** de **Vue.js**.
 
 Vous trouverez ci-dessous les différentes parties de mon rapport d'alternance.
 
-Dans l'**Introduction**, je présente mon entreprise d'accueil *(qui n'est pas une entreprise mais un service public)*
+Dans l'**Introduction**, je présente mon entreprise d'accueil *(qui n'est pas une entreprise, mais un service public)*
 le [Conseil Départemental de Meurthe-et-Moselle](https://www.meurthe-et-moselle.fr/),
 et le logiciel [Lizmap](https://www.lizmap.com/) qui est utilisé au sein de ce service.
 

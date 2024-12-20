@@ -16,6 +16,6 @@ hero:
       link: /presentation
     - theme: alt
       text: Puzzle54
-      link: /puzzle54
+      link: /puzzle54/intro
 ---
 

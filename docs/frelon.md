@@ -1,8 +1,12 @@
-# Frelon signalement 54
+---
+prev: 'Introduction | Lizmap'
+---
 
 <script setup>
 import CustomContainer from '/components/CustomContainer.vue'
 </script>
+
+# Frelon signalement 54
 
 <custom-container type="info">
 <p>
@@ -43,6 +47,7 @@ Elle montre aussi comment ajouter une présence de frelons ou un piège à frelo
 
 Cependant, cette popup n'était pas adaptée pour les écrans mobiles, elle était trop grande et ne s'affichait pas correctement.
 Le problème était que l'ancien alternant, qui n'était pas un développeur web, n'avait pas compris que **Lizmap** intègre [Bootstrap](https://getbootstrap.com/),
+un **framework CSS** qui permet de créer des sites web facilement, 
 et donc il y avait des conflits entre les différents styles CSS, celui de **Bootstrap** et celui ajouté par l'ancien alternant.
 
 J'ai donc dû adapter le style de la popup pour qu'elle s'affiche correctement sur les écrans mobiles, tout en prenant en compte les styles de **Bootstrap**.

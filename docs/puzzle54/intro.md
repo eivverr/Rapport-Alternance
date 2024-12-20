@@ -1,3 +1,7 @@
+---
+prev: 'Améliorations | Maptour'
+---
+
 # Puzzle54
 
 <script setup>
@@ -10,16 +14,22 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 ## Introduction
 
+J'ai réalisé **seul** ce projet (sauf pour les données de l'**api**), il a été réalisé en **JavaScript** avec la bibliothèque [OpenLayers](https://openlayers.org/),
+une bibliothèque **JavaScript open source** qui permet de créer des **cartes interactives** dans un navigateur web.
+
 ### Objectif du projet
 
 L'objectif de ce projet est d'être un **puzzle en ligne**, où l'utilisateur doit **reconstituer** une carte du département de Meurthe-et-Moselle en plaçant les **cantons** à leur place sur la carte.
+Il informe également l'utilisateur sur les **conseillers** des cantons du département.
+
+Ce projet a pour but d'être une manière **ludique** et **interactive** de découvrir les cantons du département de Meurthe-et-Moselle ainsi que les conseillers qui y sont élus.
 
 ### Missions
 
 Mes missions sur ce projet ont été les suivantes :
 - Trouver une bibliothèque ou un plugin pour réaliser le projet
     - Exemple de projet similaires existants
-    - OpenLayers
+    - Présentation d'OpenLayers
     - Apprendre à utiliser OpenLayers
 - Réaliser un puzzle en web avec des données GeoJSON
     - Afficher les données GeoJSON sur la carte

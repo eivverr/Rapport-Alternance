@@ -2,11 +2,11 @@
 next: 'Puzzle54 | Introduction'
 ---
 
-# Maptour château de Lunèville
-
 <script setup>
 import CustomContainer from '/components/CustomContainer.vue'
 </script>
+
+# Maptour château de Lunèville
 
 <custom-container type="info">
 <p>
