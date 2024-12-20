@@ -62,7 +62,7 @@ Pour adapter l'interface pour les écrans mobiles, j'ai dû modifier certains é
 Les boutons de l'interface n'étaient pas adaptés pour les écrans mobiles, ils étaient trop grands et prenaient donc trop de place sur l'écran.
 J'ai dû réduire la taille des boutons pour qu'ils s'affichent correctement sur les écrans mobiles, tout en faisant attention à ce qu'ils ne soient pas trop petits pour être cliquables.
 
-<div style="display: flex; align-items: center; justify-content: space-around">
+<div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap">
   <img src="/img/frelon_capture_boutons_2.PNG?url">
   <img src="/img/frelon_capture_boutons.PNG?url">
 </div>
