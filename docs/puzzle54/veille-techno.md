@@ -81,7 +81,7 @@ Voici un exemple de code pour initialiser une carte **OpenLayers** :
 function initOpenLayersMap() {
     // Créer la carte OpenLayers
     const map = new ol.Map({
-        // Cible de la carte
+        // Cible de la carte, l'id de l'élément HTML où la carte sera affichée
         target: "map",
         // Ajoute une couche
         layers: [
