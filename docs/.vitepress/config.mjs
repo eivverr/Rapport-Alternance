@@ -63,8 +63,9 @@ export default defineConfig({
                             {
                                 text: 'Puzzle54',
                                 collapsed: true,
+                                link: '/puzzle54/intro',
                                 items: [
-                                    { text: 'Introduction', link: '/puzzle54/intro' },
+                                    // { text: 'Introduction', link: '/puzzle54/intro' },
                                     { text: 'Veille technologique', link: '/puzzle54/veille-techno' },
                                     { text: 'Réalisation', link: '/puzzle54/realisation' },
                                     { text: 'Fonctionnalités supplémentaires', link: '/puzzle54/fonctionnalites-sup' }

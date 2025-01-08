@@ -137,3 +137,22 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Custom CSS
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-brand-1: #6644ff;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.vp-doc a {
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
+}
