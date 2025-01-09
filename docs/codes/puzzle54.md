@@ -40,14 +40,9 @@ layerSource.once('featuresloadend', function() {
 
 ## Modifier l'apparence des pièces du puzzle
 
-```javascript
-let layerDepartement = new ol.layer.Vector({
-    source: new ol.source.Vector({
-        url: 'https://france-geojson.gregoiredavid.fr/repo/departements/54-meurthe-et-moselle/departement-54-meurthe-et-moselle.geojson',
-        format: new ol.format.GeoJSON()
-    })
-});
+::: code-group
 
+```javascript [styles]
 // Style du texte, récupère le nom de la feature
 function styleText(feature) {
     return new ol.style.Text({
@@ -78,6 +73,15 @@ function styleCanton(feature) {
         text: styleText(feature)
     });
 }
+```
+
+```javascript [layers]
+let layerDepartement = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        url: 'https://france-geojson.gregoiredavid.fr/repo/departements/54-meurthe-et-moselle/departement-54-meurthe-et-moselle.geojson',
+        format: new ol.format.GeoJSON()
+    })
+});
 
 // Layer des cantons
 let layerCantons = new ol.layer.Vector({
@@ -87,7 +91,9 @@ let layerCantons = new ol.layer.Vector({
     }),
     style: styleCanton
 });
+```
 
+```javascript [map]
 const map = new ol.Map({
     target: id,
     layers: [
@@ -108,5 +114,7 @@ sourceDepartement.once('featuresloadend', function() {
     map.getView().fit(feature.getGeometry(), {padding: [100, 100, 100, 100]});
 });
 ```
+
+:::
 
 [Retour à la réalisation du projet ↩︎](/puzzle54/realisation#modifier-l-apparence-des-pieces-du-puzzle)
