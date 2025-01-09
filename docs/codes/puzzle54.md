@@ -95,7 +95,7 @@ let layerCantons = new ol.layer.Vector({
 
 ```javascript [map]
 const map = new ol.Map({
-    target: id,
+    target: "map",
     layers: [
         layerDepartement,
         layerCantons,
