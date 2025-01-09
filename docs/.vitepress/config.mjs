@@ -5,7 +5,7 @@ import footnotes from 'markdown-it-footnote'
 export default defineConfig({
     cleanUrls: true,
     head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
+        ['link', { rel: 'icon', href: '/img/logo.png' }]
     ],
     title: "Rapport d'alternance",
     description: "Mon rapport d'alternance pour ma troisième année de BUT Informatique",
@@ -22,10 +22,11 @@ export default defineConfig({
 
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: 'Accueil', link: '/home' },
-            { text: 'Introduction', link: '/presentation' },
-            { text: 'Projets', link: '/frelon' },
-            { text: 'Annexe', link: '/liens' }
+            { text: 'Projets', items: [
+                { text: 'Frelon signalement', link: '/frelon' },
+                { text: 'Maptour', link: '/maptour' },
+                { text: 'Puzzle54', link: '/puzzle54/intro' }
+            ] }
         ],
 
         search: {
@@ -34,9 +35,8 @@ export default defineConfig({
 
         sidebar: [
             {
-                items: [
-                    { text: 'Accueil', link: '/home' },
-                ]
+                text: 'Accueil',
+                link: '/home'
             },
             {
                 text: 'Introduction',

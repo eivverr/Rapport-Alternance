@@ -156,3 +156,34 @@ img {
 .vp-doc a:hover {
   text-decoration: underline;
 }
+
+/* --- Home button --- */
+
+div.group:first-of-type section {
+  padding-bottom: 10px !important;
+}
+
+div.group:first-of-type a {
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+div.group:first-of-type a:hover {
+  border: 1px solid var(--vp-c-brand-1);
+}
+
+div.group:first-of-type .has-active a {
+  background-color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-1);
+}
+
+div.group:first-of-type a p {
+  font-weight: bold !important;
+}
+
+div.group:first-of-type .has-active a p {
+  color: white !important;
+}
