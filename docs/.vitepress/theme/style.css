@@ -165,7 +165,7 @@ div.group:first-of-type section {
 
 div.group:first-of-type a {
   font-weight: bold;
-  border: 1px solid black;
+  border: 1px solid var(--vp-c-text-2);
   border-radius: 50px;
   text-align: center;
   transition: all 0.25s;

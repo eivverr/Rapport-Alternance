@@ -4,6 +4,7 @@ import footnotes from 'markdown-it-footnote'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     cleanUrls: true,
+    lastUpdated: true,
     head: [
         ['link', { rel: 'icon', href: '/img/logo.png' }]
     ],
