@@ -165,16 +165,17 @@ window.updateZoomLevel = function(lizMap, zoom) {
 }
 ```
 
-<custom-container type="warning">
-<p>
-Mettre vidéo de démonstration du zoom sur les points d'intérêt
-</p>
-</custom-container>
-
 #### Zoom sur le circuit avec le niveau de zoom au lancement de la carte
 
 Pour zoomer sur le circuit avec le niveau de zoom souhaité au lancement de la carte, j'ai utilisé la même fonction que pour les points d'intérêt,
 mais j'ai simplement appelé cette fonction au lancement de la carte.
+
+#### Démonstration
+
+<video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
+    <source src="/video/demo-maptour-zoom.mp4" type="video/mp4">
+    Your browser does not support the video tag. 
+</video>
 
 ### Réglage du système de navigation
 

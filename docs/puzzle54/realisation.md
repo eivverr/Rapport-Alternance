@@ -48,6 +48,8 @@ Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités
 
 ### Permettre de déplacer les pièces du puzzle
 
+
+
 ### Vérifier si les pièces sont bien placées
 
 ### Vérifier si le puzzle est terminé
