@@ -2,7 +2,9 @@
 
 ## Afficher les données GeoJSON sur la carte
 
-```javascript
+::: code-group
+
+```javascript [layers]
 // Création d'un layer avec des données GeoJSON
 let layer = new ol.layer.Vector({
     // Source des données GeoJSON
@@ -11,7 +13,9 @@ let layer = new ol.layer.Vector({
         format: new ol.format.GeoJSON()
     })
 });
+```
 
+```javascript [map]
 const map = new ol.Map({
     target: "map",
     layers: [
@@ -35,6 +39,8 @@ layerSource.once('featuresloadend', function() {
     map.getView().fit(feature.getGeometry(), {padding: [100, 100, 100, 100]});
 });
 ```
+
+:::
 
 [Retour à la réalisation du projet ↩︎](/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte)
 
