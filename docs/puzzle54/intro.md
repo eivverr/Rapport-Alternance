@@ -27,16 +27,16 @@ Ce projet a pour but d'être une manière **ludique** et **interactive** de déc
 ### Missions
 
 Mes missions sur ce projet ont été les suivantes :
-- Trouver une bibliothèque ou un plugin pour réaliser le projet
-    - Exemple de projet similaires existants
-    - Présentation d'OpenLayers
-    - Apprendre à utiliser OpenLayers
-- Réaliser un puzzle en web avec des données GeoJSON
-    - Afficher les données GeoJSON sur la carte
-    - Modifier l'apparence des pièces du puzzle
-    - Permettre de déplacer les pièces du puzzle
-    - Vérifier si les pièces sont bien placées
-    - Vérifier si le puzzle est terminé
+- [Trouver une bibliothèque ou un plugin pour réaliser le projet](/puzzle54/veille-techno#openlayers)
+    - [Exemple de projet similaires existants](/puzzle54/veille-techno#exemples-de-projets-similaires)
+    - [Présentation d'OpenLayers](/puzzle54/veille-techno#presentation-d-openlayers)
+    - [Apprendre à utiliser OpenLayers](/puzzle54/veille-techno#apprendre-a-utiliser-openlayers)
+- [Réaliser un puzzle en web avec des données GeoJSON](/puzzle54/realisation#realiser-un-puzzle-en-web-avec-des-donnees-geojson)
+    - [Afficher les données GeoJSON sur la carte](/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte)
+    - [Modifier l'apparence des pièces du puzzle](/puzzle54/realisation#modifier-l-apparence-des-pieces-du-puzzle)
+    - [Permettre de déplacer les pièces du puzzle](/puzzle54/realisation#permettre-de-deplacer-les-pieces-du-puzzle)
+    - [Vérifier si les pièces sont bien placées](/puzzle54/realisation#verifier-si-les-pieces-sont-bien-placees)
+    - [Vérifier si le puzzle est terminé](/puzzle54/realisation#verifier-si-le-puzzle-est-termine)
 - Ajouter des fonctionnalités supplémentaires
     - Ajout d'un bouton pour zoomer sur le puzzle
     - Ajout d'un bouton pour zoomer sur la prochaine pièce à placer

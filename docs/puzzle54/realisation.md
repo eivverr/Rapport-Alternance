@@ -49,6 +49,8 @@ Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités
 
 ### Permettre de déplacer les pièces du puzzle
 
+
+
 [Code de la démonstration](/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) et le résultat :
 
 <openlayers-demo-interaction />
