@@ -2,6 +2,7 @@
 import CustomContainer from '/components/CustomContainer.vue';
 import OpenlayersDemoGeojson from '/components/OpenlayersDemoGeojson.vue';
 import OpenlayersDemoStyle from '/components/OpenlayersDemoStyle.vue';
+import OpenlayersDemoInteraction from '/components/OpenlayersDemoInteraction.vue';
 </script>
 
 # Réalisation du projet
@@ -48,7 +49,9 @@ Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités
 
 ### Permettre de déplacer les pièces du puzzle
 
+[Code de la démonstration](/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) et le résultat :
 
+<openlayers-demo-interaction />
 
 ### Vérifier si les pièces sont bien placées
 
