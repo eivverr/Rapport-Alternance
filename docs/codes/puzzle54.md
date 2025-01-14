@@ -50,35 +50,35 @@ layerSource.once('featuresloadend', function() {
 
 ```javascript [styles]
 // Style du texte, récupère le nom de la feature
-function styleText(feature) {
-    return new ol.style.Text({
-        font: '12px Calibri,sans-serif',
-        fill: new ol.style.Fill({
-            color: 'black'
-        }),
-        stroke: new ol.style.Stroke({
-            color: 'white',
-            width: 3
-        }),
+function styleText(feature) { // [!code ++]
+    return new ol.style.Text({ // [!code ++]
+        font: '12px Calibri,sans-serif', // [!code ++]
+        fill: new ol.style.Fill({ // [!code ++]
+            color: 'black' // [!code ++]
+        }), // [!code ++]
+        stroke: new ol.style.Stroke({ // [!code ++]
+            color: 'white', // [!code ++]
+            width: 3 // [!code ++]
+        }), // [!code ++]
         // Récupère le nom de la feature dans ces propriétés
-        text: feature.get('nom'),
-        overflow: true
-    });
-}
+        text: feature.get('nom'), // [!code ++]
+        overflow: true // [!code ++]
+    }); // [!code ++]
+} // [!code ++]
 
 // Style des cantons
-function styleCanton(feature) {
-    return new ol.style.Style({
-        fill: new ol.style.Fill({
-            color: 'green'
-        }),
-        stroke: new ol.style.Stroke({
-            color: 'black',
-            width: 1
-        }),
-        text: styleText(feature)
-    });
-}
+function styleCanton(feature) { // [!code ++]
+    return new ol.style.Style({ // [!code ++]
+        fill: new ol.style.Fill({ // [!code ++]
+            color: 'green' // [!code ++]
+        }), // [!code ++]
+        stroke: new ol.style.Stroke({ // [!code ++]
+            color: 'black', // [!code ++]
+            width: 1 // [!code ++]
+        }), // [!code ++]
+        text: styleText(feature) // [!code ++]
+    }); // [!code ++]
+} // [!code ++]
 ```
 
 ```javascript [layers]
