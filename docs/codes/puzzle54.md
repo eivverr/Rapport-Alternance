@@ -129,6 +129,18 @@ sourceDepartement.once('featuresloadend', function() {
 
 ::: code-group
 
+```javascript [interactions]
+// Interaction de sélection des pièces du puzzle
+let selectPiecesPuzzle = new ol.interaction.Select({ // [!code ++]
+    layers: [layerCantons] // [!code ++]
+}); // [!code ++]
+
+// Interaction de déplacement des pièces du puzzle
+let translatePiecesPuzzle = new ol.interaction.Translate({ // [!code ++]
+    features: selectPiecesPuzzle.getFeatures() // [!code ++]
+}); // [!code ++]
+```
+
 ```javascript [styles]
 function styleText(feature) {
     return new ol.style.Text({
@@ -190,16 +202,6 @@ const map = new ol.Map({
         maxZoom: 10,
     }),
 });
-
-// Interaction de sélection des pièces du puzzle
-let selectPiecesPuzzle = new ol.interaction.Select({ // [!code ++]
-    layers: [layerCantons] // [!code ++]
-}); // [!code ++]
-
-// Interaction de déplacement des pièces du puzzle
-let translatePiecesPuzzle = new ol.interaction.Translate({ // [!code ++]
-    features: selectPiecesPuzzle.getFeatures() // [!code ++]
-}); // [!code ++]
 
 // Ajout des interactions à la carte
 map.addInteraction(selectPiecesPuzzle); // [!code ++]

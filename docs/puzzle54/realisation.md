@@ -49,9 +49,17 @@ Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités
 
 ### Permettre de déplacer les pièces du puzzle
 
+Sur OpenLayers, il est possible d'ajouter des **interactions** à la carte ou à un `layer.Vector`
+permettant à l'utilisateur de **déplacer** les **features** (les pièces du puzzle) sur la carte.
 
+Ici, on va ajouter une **interaction** de type `interaction.Select` à notre `layer.Vector` des **cantons**,
+qui va permettre de **sélectionner** une pièce du puzzle.
+Ensuite pour les déplacer, on ajoute une **interaction** de type `interaction.Translate` sur la **feature** sélectionnée
+via la **sélection** de l'**interaction** `Select`.
+Pour finir, on ajoute les **interactions** à la carte.
 
-[Code de la démonstration](/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) et le résultat :
+[Code de la démonstration](/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) 
+et le résultat (cliquez sur une pièce pour pouvoir ensuite la déplacer) :
 
 <openlayers-demo-interaction />
 
