@@ -132,11 +132,13 @@ sourceDepartement.once('featuresloadend', function() {
 ```javascript [interactions]
 // Interaction de sélection des pièces du puzzle
 let selectPiecesPuzzle = new ol.interaction.Select({ // [!code ++]
+    // Sélectionne les features du layerCantons
     layers: [layerCantons] // [!code ++]
 }); // [!code ++]
 
 // Interaction de déplacement des pièces du puzzle
 let translatePiecesPuzzle = new ol.interaction.Translate({ // [!code ++]
+    // Déplace les features sélectionnées par l'interaction selectPiecesPuzzle
     features: selectPiecesPuzzle.getFeatures() // [!code ++]
 }); // [!code ++]
 ```
