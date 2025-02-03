@@ -40,7 +40,6 @@ Mes missions sur ce projet ont été les suivantes :
 - Ajouter des fonctionnalités supplémentaires
     - Ajout d'un bouton pour zoomer sur le puzzle
     - Ajout d'un bouton pour zoomer sur la prochaine pièce à placer
-    - Mélanger les pièces du puzzle
     - Afficher un tootltip quand une pièce est bien placée
     - Ajout d'une balise info qui affiche des infos au clic
     - Réafficher le tooltip sur le clic d'une pièce déjà placée

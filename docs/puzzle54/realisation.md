@@ -3,6 +3,7 @@ import CustomContainer from '/components/CustomContainer.vue';
 import OpenlayersDemoGeojson from '/components/OpenlayersDemoGeojson.vue';
 import OpenlayersDemoStyle from '/components/OpenlayersDemoStyle.vue';
 import OpenlayersDemoInteraction from '/components/OpenlayersDemoInteraction.vue';
+import OpenlayersDemoCorrectlyPlaced from '/components/OpenlayersDemoCorrectlyPlaced.vue';
 </script>
 
 # Réalisation du projet
@@ -64,6 +65,25 @@ et le résultat (cliquez sur une pièce pour pouvoir ensuite la déplacer) :
 <openlayers-demo-interaction />
 
 ### Vérifier si les pièces sont bien placées
+
+Dans un premier temps, pour vérifier que les pièces sont bien placées, il faut que les pièces ne soient pas déjà placées correctement.
+On va donc créer une fonction qui va déplacer de manière **aléatoire** les pièces du puzzle, cette fonction sera appelée au chargement des pièces.
+
+Pour vérifier si les pièces sont bien placées, on va vérifier si les **features** sont à la **bonne position**.
+Pour cela, on va ajouter un autre `layer` des cantons qui servira de référence, il ne sera pas visible, mais il va nous permettre de vérifier si les pièces sont bien placées.
+Lors des chargements des `layer` cantons et référence, on attribut in **id** à chaque **feature** pour pouvoir les comparer.
+
+N'étant pas une machine comme RoboCop, Terminator ou R2D2, on ne peut pas placer au **pixel près** les pièces,
+on va donc ajouter un système d'**aimant** pour placer les pièces plus facilement.
+Il suffit juste de calculer la différence entre la position de la pièce et la position de la référence,
+et si la différence est inférieure à une certaine valeur, on dit que la pièce est bien placée.
+
+Quand une pièce est bien positionnée, on la supprime et on change le style de la pièce de la référence,
+c'est ce qui donne cet effet **d'aimant**.
+
+[Code de la démonstration](/codes/puzzle54#verifier-si-les-pieces-sont-bien-placees) et le résultat :
+
+<openlayers-demo-correctly-placed />
 
 ### Vérifier si le puzzle est terminé
 
