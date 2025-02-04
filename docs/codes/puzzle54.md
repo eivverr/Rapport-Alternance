@@ -220,7 +220,7 @@ sourceDepartement.once('featuresloadend', function() {
 
 [Retour à la réalisation du projet ↩︎](/puzzle54/realisation#permettre-de-deplacer-les-pieces-du-puzzle)
 
-## Vérifier si les pièces sont bien placées
+## Créer notre puzzle
 
 ::: code-group
 
@@ -405,4 +405,4 @@ sourceCantons.once('featuresloadend', function() { // [!code ++]
 
 :::
 
-[Retour à la réalisation du projet ↩︎](/puzzle54/realisation#verifier-si-les-pieces-sont-bien-placees)
+[Retour à la réalisation du projet ↩︎](/puzzle54/realisation#creer-notre-puzzle)

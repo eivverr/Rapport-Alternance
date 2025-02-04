@@ -35,12 +35,4 @@ Mes missions sur ce projet ont été les suivantes :
     - [Afficher les données GeoJSON sur la carte](/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte)
     - [Modifier l'apparence des pièces du puzzle](/puzzle54/realisation#modifier-l-apparence-des-pieces-du-puzzle)
     - [Permettre de déplacer les pièces du puzzle](/puzzle54/realisation#permettre-de-deplacer-les-pieces-du-puzzle)
-    - [Vérifier si les pièces sont bien placées](/puzzle54/realisation#verifier-si-les-pieces-sont-bien-placees)
-    - [Vérifier si le puzzle est terminé](/puzzle54/realisation#verifier-si-le-puzzle-est-termine)
-- Ajouter des fonctionnalités supplémentaires
-    - Ajout d'un bouton pour zoomer sur le puzzle
-    - Ajout d'un bouton pour zoomer sur la prochaine pièce à placer
-    - Afficher un tootltip quand une pièce est bien placée
-    - Ajout d'une balise info qui affiche des infos au clic
-    - Réafficher le tooltip sur le clic d'une pièce déjà placée
-    - Système d'aimant pour placer les pièces plus facilement
+    - [Créer notre puzzle](/puzzle54/realisation#creer-notre-puzzle)

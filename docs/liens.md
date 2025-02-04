@@ -1,5 +1,5 @@
 ---
-prev: 'Puzzle54 | Fonctionnalités supplémentaires'
+prev: 'Puzzle54 | Réalisation'
 next: 'Codes | Puzzle54'
 ---
 

@@ -3,7 +3,7 @@ import CustomContainer from '/components/CustomContainer.vue';
 import OpenlayersDemoGeojson from '/components/OpenlayersDemoGeojson.vue';
 import OpenlayersDemoStyle from '/components/OpenlayersDemoStyle.vue';
 import OpenlayersDemoInteraction from '/components/OpenlayersDemoInteraction.vue';
-import OpenlayersDemoCorrectlyPlaced from '/components/OpenlayersDemoCorrectlyPlaced.vue';
+import OpenlayersDemoPuzzle from '/components/OpenlayersDemoPuzzle.vue';
 </script>
 
 # Réalisation du projet
@@ -64,7 +64,7 @@ et le résultat (cliquez sur une pièce pour pouvoir ensuite la déplacer) :
 
 <openlayers-demo-interaction />
 
-### Vérifier si les pièces sont bien placées
+### Créer notre puzzle
 
 Dans un premier temps, pour vérifier que les pièces sont bien placées, il faut que les pièces ne soient pas déjà placées correctement.
 On va donc créer une fonction qui va déplacer de manière **aléatoire** les pièces du puzzle, cette fonction sera appelée au chargement des pièces.
@@ -81,11 +81,12 @@ et si la différence est inférieure à une certaine valeur, on dit que la pièc
 Quand une pièce est bien positionnée, on la supprime et on change le style de la pièce de la référence,
 c'est ce qui donne cet effet **d'aimant**.
 
-[Code de la démonstration](/codes/puzzle54#verifier-si-les-pieces-sont-bien-placees) et le résultat :
+[Code de la démonstration](/codes/puzzle54#creer-notre-puzzle) et le résultat :
 
-<openlayers-demo-correctly-placed />
+<openlayers-demo-puzzle />
 
-### Vérifier si le puzzle est terminé
+Et voilà, nous avons notre **puzzle en ligne**, le plus gros du travail est fait, il n'est pas nécessaire de parler des petites modifications que j'ai pu faire pour améliorer le projet,
+comme le **responsive design**, l'ajout de boutons pour améliorer l'**expérience utilisateur**, **popups** pour afficher des informations sur les cantons, etc.
 
 [^1]: Dans **OpenLayers**, une **feature** est un élément géographique, comme un point, une ligne ou un polygone.
 Une **feature** possède des **propriétés** et une **géométrie** qui permet de la dessiner sur la carte, 
