@@ -1,7 +1,3 @@
----
-prev: 'Améliorations | Maptour'
----
-
 <script setup>
 import CustomContainer from '/components/CustomContainer.vue'
 </script>

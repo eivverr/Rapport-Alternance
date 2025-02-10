@@ -26,7 +26,8 @@ export default defineConfig({
             { text: 'Projets', items: [
                 { text: 'Frelon signalement', link: '/frelon' },
                 { text: 'Maptour', link: '/maptour' },
-                { text: 'Puzzle54', link: '/puzzle54/intro' }
+                { text: 'Puzzle54', link: '/puzzle54/intro' },
+                { text: 'Script restauration', link: '/script-restauration' }
             ] }
         ],
 
@@ -66,11 +67,11 @@ export default defineConfig({
                                 collapsed: true,
                                 link: '/puzzle54/intro',
                                 items: [
-                                    // { text: 'Introduction', link: '/puzzle54/intro' },
                                     { text: 'Veille technologique', link: '/puzzle54/veille-techno' },
                                     { text: 'Réalisation', link: '/puzzle54/realisation' }
                                 ]
-                            }
+                            },
+                            { text: 'Script restauration', link: '/script-restauration' }
                         ]
                     }
                 ]
@@ -83,7 +84,8 @@ export default defineConfig({
                         text: 'Codes',
                         collapsed: false,
                         items: [
-                            { text: 'Puzzle54', link: '/codes/puzzle54' }
+                            { text: 'Puzzle54', link: '/codes/puzzle54' },
+                            { text: 'Script restauration', link: '/codes/script-restauration' }
                         ]
                     }
                 ]
@@ -93,6 +95,10 @@ export default defineConfig({
         socialLinks: [
             { icon: 'github', link: 'https://github.com/WashiFR/Rapport-Alternance' },
             { icon: 'vitepress', link: 'https://vitepress.dev' }
-        ]
+        ],
+
+        footer: {
+            message: "WEIER Loris - Rapport d'alternance - 2025"
+        }
     }
 })

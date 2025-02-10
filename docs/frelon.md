@@ -1,7 +1,3 @@
----
-prev: 'Introduction | Lizmap'
----
-
 <script setup>
 import CustomContainer from '/components/CustomContainer.vue'
 </script>
@@ -82,7 +78,7 @@ Sur **Lizmap**, il est possible de choisir d'afficher ou non les couches de la c
 cela ce fait via une popup qui s'ouvre en cliquant sur le bouton **Couche** en haut à droite de la carte.
 Mon maître d'apprentissage m'a demandé de modifier cette popup pour qu'elle soit affiché au même endroit que les formulaires.
 
-<custom-container type="warning">
+<custom-container type="todo">
 <p>
 Mettre vidéo de démonstration de l'amélioration de la popup des couches
 </p>

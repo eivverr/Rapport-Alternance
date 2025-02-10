@@ -1,7 +1,3 @@
----
-next: 'Puzzle54 | Introduction'
----
-
 <script setup>
 import CustomContainer from '/components/CustomContainer.vue'
 </script>

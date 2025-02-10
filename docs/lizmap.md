@@ -1,7 +1,3 @@
----
-next: 'Améliorations | Frelon signalement'
----
-
 # Présentation de Lizmap
 
 [Lizmap](https://www.lizmap.com/) est un logiciel open-source, développé par la société française [3Liz](https://www.3liz.com/) qui est spécialisée dans les solutions SIG. 

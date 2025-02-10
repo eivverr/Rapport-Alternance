@@ -1,8 +1,3 @@
----
-prev: 'Puzzle54 | Réalisation'
-next: 'Codes | Puzzle54'
----
-
 # Liens
 
 ## Liens utiles

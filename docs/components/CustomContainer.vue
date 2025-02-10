@@ -9,13 +9,15 @@ const props = defineProps({
          :class="{
             'info': type === 'info',
             'warning': type === 'warning',
-            'danger': type === 'danger'
+            'danger': type === 'danger',
+            'todo': type === 'todo'
          }">
         <div class="container-title">
             <img :src="{
-                'info': '/icons/info-icon.svg',
-                'warning': '/icons/warning-icon.svg',
-                'danger': '/icons/danger-icon.svg'
+                'info': '/icons/icon-info.svg',
+                'warning': '/icons/icon-warning.svg',
+                'danger': '/icons/icon-danger.svg',
+                'todo': '/icons/icon-todo.svg'
             }[type]" alt="{{type}}" />
             <p>{{type}}</p>
         </div>
@@ -66,6 +68,14 @@ const props = defineProps({
 
     .container-title {
         color: #ff0000;
+    }
+}
+
+.todo {
+    border-left-color: #9b71ff;
+
+    .container-title {
+        color: #9b71ff;
     }
 }
 

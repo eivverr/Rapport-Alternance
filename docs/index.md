@@ -17,5 +17,15 @@ hero:
     - theme: alt
       text: Puzzle54
       link: /puzzle54/intro
+
+features:
+  - icon:
+      src: /img/js.png
+    title: "Développement web"
+    details: "Développement d'applications web avec JavaScript, HTML et CSS."
+  - icon:
+      src: /img/OpenLayers_logo.svg.png
+    title: "Cartographie web"
+    details: "Utilisation de la bibliothèque OpenLayers pour afficher des cartes interactives."
 ---
 
