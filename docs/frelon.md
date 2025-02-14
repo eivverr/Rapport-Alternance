@@ -78,11 +78,10 @@ Sur **Lizmap**, il est possible de choisir d'afficher ou non les couches de la c
 cela ce fait via une popup qui s'ouvre en cliquant sur le bouton **Couche** en haut à droite de la carte.
 Mon maître d'apprentissage m'a demandé de modifier cette popup pour qu'elle soit affiché au même endroit que les formulaires.
 
-<custom-container type="todo">
-<p>
-Mettre vidéo de démonstration de l'amélioration de la popup des couches
-</p>
-</custom-container>
+<video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
+    <source src="/video/demo-frelon-popup.mkv?url" type="video/mp4">
+    Your browser does not support the video tag. 
+</video>
 
 [^1]: **Bootstrap** est un **framework CSS** qui permet de créer des sites web facilement en intégrant des composants prédéfinis et des styles CSS prédéfinis.
 Il a été créé par **Twitter** en 2011 et est **open-source**. Plus d'informations sur [le site officiel de Bootstrap](https://getbootstrap.com/).

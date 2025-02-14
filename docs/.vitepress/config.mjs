@@ -23,6 +23,8 @@ export default defineConfig({
 
         // https://vitepress.dev/reference/default-theme-config
         nav: [
+            { text: 'Site du service', link: 'https://infogeo54.fr/' },
+            { text: 'Projets du service', link: 'https://webcarto.infogeo54.fr/' },
             { text: 'Projets', items: [
                 { text: 'Frelon signalement', link: '/frelon' },
                 { text: 'Maptour', link: '/maptour' },

@@ -4,41 +4,74 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 # Script de restauration des tables de la base de données
 
+## Contexte
+
+Un de mes collègues m'a demandé de créer un script **bash**[^1] permettant de restaurer des données ou une structure de table à partir d'un fichier de sauvegarde.
+Cela permettrait de gagner du temps et d'éviter d'écrire les requêtes **PSQL** à la main, aussi, car le logiciel utilisé est parfois lent.
+
 ## Introduction
 
-Ce script permet de **restaurer** les tables de la base de données à partir d'un fichier de sauvegarde.
-Il permet d'éviter de devoir écrire les **requêtes SQL** à la main tout en **facilitant** la restauration des tables.
+Ce script permet de **restaurer** des données ou une structure de table à partir d'un fichier de sauvegarde (format **.tar.gz** ou **.sql.gz**).
 
 <custom-container type="info">
 <p>
 Vous trouverez le code <strong>complet</strong> du script dans la <a href="./codes/script-restauration">page suivante</a>.
 </p>
+<p>
+Je ne suis pas expert en <b>bash</b>, mais j'ai essayé de faire un script qui soit <b>lisible</b> et <b>compréhensible</b>.
+</p>
 </custom-container>
 
 ### Objectifs
 
-Comme dit précédemment, le script a pour objectif de **restaurer** les tables de la base de données à partir d'un fichier de sauvegarde,
-il permet de gagner du temps et d'éviter les erreurs de saisie.
+Voici donc ce que doit permettre de faire le script :
 
-Pour ce faire, il faut utiliser un script **Bash**[^1] qui va **lire** le fichier de sauvegarde et **exécuter** les requêtes SQL.
-Le script doit :
-* Lire les fichiers de sauvegarde disponibles
-* Afficher les fichiers de sauvegarde disponibles pour permettre à l'utilisateur de choisir le fichier à restaurer
-* Demander à l'utilisateur de choisir le mode de restauration (extraction des données ou de la structure)
-* Dans les 2 cas, le script doit demander à l'utilisateur de choisir le schéma et le nom de la table à restaurer
-* Le script doit ensuite extraire les données ou la structure de la table choisie et les copier dans un nouveau fichier
-  * Extraction des données :
-    * La base de données choisie est vidée
-    * Les données copiées dans un nouveau fichier sont insérées dans la base de données
-  * Extraction de la structure : 
-    * Une nouvelle table est créée avec la structure copiée du nouveau fichier
+* Choisir un fichier de sauvegarde à restaurer (format `.tar.gz` ou `.sql.gz`)
+* Choisir si l'on veut restaurer la **structure** de la table ou les **données**, ou les deux
+* Choisir le schéma de la base de données
+* Choisir la table à restaurer (parmi celles du schéma choisi)
+* Exécuter la restauration en fonction des choix précédents
+
+### Fonctionnement
+
+Le script se déroule en plusieurs étapes :
+
+1. **Choix du fichier de sauvegarde** :
+   * affiche la liste des fichiers de sauvegarde disponibles (format `.tar.gz` ou `.sql.gz`) 
+   * l'utilisateur doit choisir un fichier de sauvegarde à restaurer, en entrant le nom du fichier ou le numéro correspondant
+   * vérifie que le fichier choisi existe (sinon, retour à l'étape 1)
+   * demande de confirmer le choix du fichier de sauvegarde (sinon, retour à l'étape 1)
+2. **Choix du mode de restauration** :
+   * l'utilisateur doit choisir si l'on veut restaurer la **structure** de la table, les **données**, ou les **deux**
+3. **Choix de la table à restaurer** :
+   * affiche la liste des schémas de la base de données (sauf les schémas **pg_catalog** et **information_schema**)
+   * l'utilisateur doit choisir un schéma, en entrant le nom du schéma ou le numéro correspondant (public par défaut)
+   * vérifie que le schéma choisi existe (sinon, retour au choix du schéma)
+   * affiche la liste des tables du schéma choisi
+   * l'utilisateur doit choisir une table, en entrant le nom de la table ou le numéro correspondant
+   * vérifie que la table choisie existe (sinon, retour au choix du nom de la table)
+4. **Restauration de la table** :
+   * si le répertoire contenant les fichiers `.sql` à exécuter n'existe pas, il est créé
+   * décompresse le fichier de sauvegarde puis copie la structure et/ou les données de la table choisie dans un fichier `.sql`
+   1. Si l'utilisateur a choisi de restaurer les **données** :
+      * défini le `search_path` pour le schéma choisi
+      * vide la table choisie avec `TRUNCATE`
+      * exécute le fichier `.sql` contenant les données de la table
+   2. Si l'utilisateur a choisi de restaurer la **structure** :
+      * exécute le fichier `.sql` contenant la structure de la table
+      * défini le `search_path` pour le schéma choisi
+      * récupère le propriétaire de la table d'origine
+      * change le propriétaire de la table restaurée pour qu'il soit le même que celui de la table d'origine
+      * donne tous les droits sur la table restaurée à l'utilisateur courant avec `GRANT ALL ON`
+   3. Si l'utilisateur a choisi de restaurer les **deux** :
+      * fait la même chose que pour la restauration de la structure, mais copie aussi les données de la table dans le fichier `.sql`
+   * affiche un message de confirmation pour chaque étape, permettant de vérifier que tout s'est bien passé et de savoir potentiellement quelle requête a échoué
 
 ### Exemple d'utilisation
 
-<custom-container type="todo">
-<p>
-Mettre vidéo de démonstration du script
-</p>
-</custom-container>
+<video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
+    <source src="/video/demo-script-restauration.mkv?url" type="video/mp4">
+    Your browser does not support the video tag. 
+</video>
 
 [^1]: Bash est un langage de script utilisé pour **automatiser** des tâches courantes dans les systèmes d'exploitation **Unix** et **Linux**.

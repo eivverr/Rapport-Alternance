@@ -85,8 +85,11 @@ c'est ce qui donne cet effet **d'aimant**.
 
 <openlayers-demo-puzzle />
 
-Et voilà, nous avons notre **puzzle en ligne**, le plus gros du travail est fait, il n'est pas nécessaire de parler des petites modifications que j'ai pu faire pour améliorer le projet,
-comme le **responsive design**, l'ajout de boutons pour améliorer l'**expérience utilisateur**, **popups** pour afficher des informations sur les cantons, etc.
+Et voilà, nous avons notre **puzzle en ligne**, le plus gros du travail est fait, si vous regardez le [projet,](https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=puzzle_cd54)
+vous verrez que le projet est plus complet, mais je ne vais pas parler des petites modifications que j'ai pu faire pour améliorer le projet.
+Je ne pense pas que ce soit nécessaire de parler de comment ajouter un bouton, une popup, un menu, etc.
+Ou de toutes les améliorations que j'ai pu faire pour rendre le projet plus **ergonomique** et **intuitif**. 
+Bien évidemment, le projet est **responsive**, il s'adapte à la taille de l'écran.
 
 [^1]: Dans **OpenLayers**, une **feature** est un élément géographique, comme un point, une ligne ou un polygone.
 Une **feature** possède des **propriétés** et une **géométrie** qui permet de la dessiner sur la carte, 
