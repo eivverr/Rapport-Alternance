@@ -6,7 +6,7 @@ import OpenlayersDemoInteraction from '/components/OpenlayersDemoInteraction.vue
 import OpenlayersDemoPuzzle from '/components/OpenlayersDemoPuzzle.vue';
 </script>
 
-# Réalisation du projet
+# Réaliser un puzzle en web avec des données GeoJSON
 
 <custom-container type="info">
 <p>
@@ -17,12 +17,10 @@ De plus, les codes seront disponibles dans la partie <a href="/codes/puzzle54">C
 </p>
 </custom-container>
 
-## Réaliser un puzzle en web avec des données GeoJSON
-
 Comme expliqué précédemment, il est possible d'afficher des données **GeoJSON** sur une carte **OpenLayers**, ce qui est parfait, 
 car les données de l'**api** du **Conseil Départemental de Meurthe-et-Moselle** sont en **GeoJSON**.
 
-### Afficher les données GeoJSON sur la carte
+## Afficher les données GeoJSON sur la carte
 
 Pour afficher les données **GeoJSON** sur la carte, il faut définir un `layer.Vector` avec une **source** de type `source.Vector` et un **format** en `format.GeoJSON`.
 Dans la map, on peut définir ou centrer la vue sur les données **GeoJSON** avec le paramètre `center` de `view`, cependant, il faut mettre des nombres en **brutes**, 
@@ -35,7 +33,7 @@ qui prend en paramètre la **géométrie** de la **feature**[^1] à centrer et u
 
 <openlayers-demo-geojson />
 
-### Modifier l'apparence des pièces du puzzle
+## Modifier l'apparence des pièces du puzzle
 
 Maintenant que nous avons notre contour du département de **Meurthe-et-Moselle**, nous allons pouvoir afficher les **cantons** du département.
 Pour cela rien de bien compliqué, il suffit de créer un autre `layer.Vector` comme précédemment, mais en changeant l'`url` de la **source** pour afficher les **cantons**.
@@ -48,7 +46,7 @@ Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités
 
 <openlayers-demo-style />
 
-### Permettre de déplacer les pièces du puzzle
+## Permettre de déplacer les pièces du puzzle
 
 Sur OpenLayers, il est possible d'ajouter des **interactions** à la carte ou à un `layer.Vector`
 permettant à l'utilisateur de **déplacer** les **features** (les pièces du puzzle) sur la carte.
@@ -64,7 +62,7 @@ et le résultat (cliquez sur une pièce pour pouvoir ensuite la déplacer) :
 
 <openlayers-demo-interaction />
 
-### Créer notre puzzle
+## Créer notre puzzle
 
 Dans un premier temps, pour vérifier que les pièces sont bien placées, il faut que les pièces ne soient pas déjà placées correctement.
 On va donc créer une fonction qui va déplacer de manière **aléatoire** les pièces du puzzle, cette fonction sera appelée au chargement des pièces.
@@ -85,7 +83,7 @@ c'est ce qui donne cet effet **d'aimant**.
 
 <openlayers-demo-puzzle />
 
-Et voilà, nous avons notre **puzzle en ligne**, le plus gros du travail est fait, si vous regardez le [projet,](https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=puzzle_cd54)
+Et voilà, nous avons notre **puzzle en ligne**, le plus gros du travail est fait, si vous regardez le [projet](https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=puzzle_cd54),
 vous verrez que le projet est plus complet, mais je ne vais pas parler des petites modifications que j'ai pu faire pour améliorer le projet.
 Je ne pense pas que ce soit nécessaire de parler de comment ajouter un bouton, une popup, un menu, etc.
 Ou de toutes les améliorations que j'ai pu faire pour rendre le projet plus **ergonomique** et **intuitif**. 

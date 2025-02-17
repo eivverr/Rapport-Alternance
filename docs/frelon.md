@@ -21,7 +21,7 @@ Le projet a été réaliser par le précédent alternant, et j'ai repris le proj
 La version **Admin** du projet permet d'ajouter, modifier ou de supprimer des signalements de nids de frelons ou de pièges à frelons sur une carte.
 Tandis que la version **Public** ne permet que de consulter les signalements ajoutés sur la carte.
 
-### Missions
+## Missions
 
 Le problème majeur de l'application était l'interface qui n'était pas adaptée pour les écrans mobiles, 
 et comme la plupart des utilisateurs utilisent leur smartphone pour ajouter des signalements, 

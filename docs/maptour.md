@@ -19,7 +19,7 @@ Le projet a été réaliser par le précédent alternant, et j'ai repris le proj
 La version **Admin** du projet permet d'ajouter, modifier ou de supprimer des points d'intérêt et un circuit touristique sur une carte.
 Tandis que la version **Public** permet de consulter les points d'intérêt et le circuit touristique sur une carte.
 
-### Missions
+## Missions
 
 Mes missions sur ce projet ont été les suivantes :
 - [Affichage d'une popup au lancement de la carte pour présenter le projet](#affichage-d-une-popup-au-lancement-de-la-carte-pour-presenter-le-projet)

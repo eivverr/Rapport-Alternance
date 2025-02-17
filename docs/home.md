@@ -6,8 +6,7 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 <custom-container type="warning">
 <p>
-Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes. 
-(Notamment les parties sur les projets, qui sont les plus importantes)
+Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes.
 </p>
 </custom-container>
 

@@ -23,7 +23,7 @@ ce qui pourrait potentiellement permettre de surcharger un projet **Lizmap** pou
 
 On décide donc d'utiliser **OpenLayers** pour réaliser le projet.
 
-### Présentation d'OpenLayers
+## Présentation d'OpenLayers
 
 <img style="margin: 0 auto" src="/img/openlayers.png?url">
 

@@ -4,8 +4,6 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 # Script de restauration des tables de la base de données
 
-## Contexte
-
 Un de mes collègues m'a demandé de créer un script **bash**[^1] permettant de restaurer des données ou une structure de table à partir d'un fichier de sauvegarde.
 Cela permettrait de gagner du temps et d'éviter d'écrire les requêtes **PSQL** à la main, aussi, car le logiciel utilisé est parfois lent.
 
@@ -32,7 +30,7 @@ Voici donc ce que doit permettre de faire le script :
 * Choisir la table à restaurer (parmi celles du schéma choisi)
 * Exécuter la restauration en fonction des choix précédents
 
-### Fonctionnement
+## Fonctionnement
 
 Le script se déroule en plusieurs étapes :
 
