@@ -25,11 +25,13 @@ export default defineConfig({
         nav: [
             { text: 'Site du service', link: 'https://infogeo54.fr/' },
             { text: 'Projets du service', link: 'https://webcarto.infogeo54.fr/' },
-            { text: 'Projets', items: [
-                { text: 'Frelon signalement', link: '/frelon' },
-                { text: 'Maptour', link: '/maptour' },
-                { text: 'Puzzle54', link: '/puzzle54/intro' },
-                { text: 'Script restauration', link: '/script-restauration' }
+            { text: 'Projets',
+                items: [
+                    { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
+                    { text: 'Maptour', link: '/projects/upgrades/maptour' },
+                    { text: 'Puzzle54', link: '/projects/creations/puzzle54/intro' },
+                    { text: 'Script restauration', link: '/projects/creations/script-restauration' },
+                    { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' }
             ] }
         ],
 
@@ -45,8 +47,8 @@ export default defineConfig({
             {
                 text: 'Introduction',
                 items: [
-                    { text: 'Présentation du service', link: '/presentation' },
-                    { text: 'Lizmap', link: '/lizmap' }
+                    { text: 'Présentation du service', link: '/intro/presentation' },
+                    { text: 'Lizmap', link: '/intro/lizmap' }
                 ]
             },
             {
@@ -56,8 +58,8 @@ export default defineConfig({
                         text: 'Améliorations',
                         collapsed: false,
                         items: [
-                            { text: 'Frelon signalement', link: '/frelon' },
-                            { text: 'Maptour', link: '/maptour' }
+                            { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
+                            { text: 'Maptour', link: '/projects/upgrades/maptour' }
                         ]
                     },
                     {
@@ -67,13 +69,22 @@ export default defineConfig({
                             {
                                 text: 'Puzzle54',
                                 collapsed: true,
-                                link: '/puzzle54/intro',
+                                link: '/projects/creations/puzzle54/intro',
                                 items: [
-                                    { text: 'Veille technologique', link: '/puzzle54/veille-techno' },
-                                    { text: 'Réalisation', link: '/puzzle54/realisation' }
+                                    { text: 'Veille technologique', link: '/projects/creations/puzzle54/veille-techno' },
+                                    { text: 'Réalisation', link: '/projects/creations/puzzle54/realisation' }
                                 ]
                             },
-                            { text: 'Script restauration', link: '/script-restauration' }
+                            { text: 'Script restauration', link: '/projects/creations/script-restauration' },
+                            {
+                                text: 'Restauration web',
+                                collapsed: true,
+                                link: '/projects/creations/restauration-web/intro',
+                                items: [
+                                    { text: 'Veille technologique', link: '/projects/creations/restauration-web/veille-techno' },
+                                    { text: 'Réalisation', link: '/projects/creations/restauration-web/realisation' }
+                                ]
+                            }
                         ]
                     }
                 ]
@@ -81,13 +92,13 @@ export default defineConfig({
             {
                 text: 'Annexe',
                 items: [
-                    { text: 'Liens', link: '/liens' },
+                    { text: 'Liens', link: '/annexe/liens' },
                     {
                         text: 'Codes',
                         collapsed: false,
                         items: [
-                            { text: 'Puzzle54', link: '/codes/puzzle54' },
-                            { text: 'Script restauration', link: '/codes/script-restauration' }
+                            { text: 'Puzzle54', link: '/annexe/codes/puzzle54' },
+                            { text: 'Script restauration', link: '/annexe/codes/script-restauration' }
                         ]
                     }
                 ]

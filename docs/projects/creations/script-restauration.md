@@ -13,7 +13,7 @@ Ce script permet de **restaurer** des données ou une structure de table à part
 
 <custom-container type="info">
 <p>
-Vous trouverez le code <strong>complet</strong> du script dans la <a href="./codes/script-restauration">page suivante</a>.
+Vous trouverez le code <strong>complet</strong> du script dans la <a href="/annexe/codes/script-restauration">page suivante</a>.
 </p>
 <p>
 Je ne suis pas expert en <b>bash</b>, mais j'ai essayé de faire un script qui soit <b>lisible</b> et <b>compréhensible</b>.

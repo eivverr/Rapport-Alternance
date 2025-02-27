@@ -20,12 +20,16 @@ hero:
 
 features:
   - icon:
-      src: /img/js.png
+      src: /icons/icon-javascript.svg
     title: "Développement web"
-    details: "Développement d'applications web avec JavaScript, HTML et CSS."
+    details: "Développement d'applications web avec JavaScript, HTML/CSS et Vue.js."
   - icon:
-      src: /img/OpenLayers_logo.svg.png
+      src: /icons/icon-openlayer.svg
     title: "Cartographie web"
     details: "Utilisation de la bibliothèque OpenLayers pour afficher des cartes interactives."
+  - icon:
+      src: /icons/icon-flask.svg
+    title: "Développement back-end"
+    details: "Développement d'API REST avec Flask et Python."
 ---
 

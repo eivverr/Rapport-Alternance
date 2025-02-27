@@ -21,7 +21,7 @@ Vous trouverez ci-dessous les différentes parties de mon rapport d'alternance.
 
 Dans l'**Introduction**, je présente mon entreprise d'accueil *(qui n'est pas une entreprise, mais un service public)*
 le [Conseil Départemental de Meurthe-et-Moselle](https://www.meurthe-et-moselle.fr/),
-et le logiciel [Lizmap](/lizmap) qui est utilisé au sein de ce service.
+et le logiciel [Lizmap](/intro/lizmap.md) qui est utilisé au sein de ce service.
 
 Dans la partie **Projets**, je présente les différents projets sur lesquels j'ai travaillé durant mon alternance.
 Cette partie comporte une section **Améliorations** où je présente les améliorations que j'ai apportées à des projets déjà existants,

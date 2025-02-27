@@ -23,5 +23,5 @@ Ce plugin [QGIS](https://www.qgis.org/) permet de publier des cartes interactive
 À l'heure actuelle, l'entreprise **3Liz** ne propose aucune **documentation** ou **API** sur les fonctions qu'utilise **Lizmap**.
 Il est donc très compliqué de véritablement customiser une application **Lizmap**.
 
-C'est pour cela notamment que j'ai réalisé le projet [Puzzle54](/puzzle54/intro) avec **OpenLayers**
+C'est pour cela notamment que j'ai réalisé le projet [Puzzle54](/projects/creations/puzzle54/intro) avec **OpenLayers**
 (qui est d'ailleurs utilisé par **Lizmap** pour afficher les cartes) et non **Lizmap** directement.

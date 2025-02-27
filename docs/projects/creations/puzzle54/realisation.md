@@ -13,7 +13,7 @@ import OpenlayersDemoPuzzle from '/components/OpenlayersDemoPuzzle.vue';
 Pour les démonstrations de code, je vais utiliser des données <b>GeoJSON</b> disponible sur le site <a href="https://france-geojson.gregoiredavid.fr">France GeoJSON</a>.
 </p>
 <p>
-De plus, les codes seront disponibles dans la partie <a href="/codes/puzzle54">Codes du projet Puzzle54</a> pour plus de clarté.
+De plus, les codes seront disponibles dans la partie <a href="/annexe/codes/puzzle54">Codes du projet Puzzle54</a> pour plus de clarté.
 </p>
 </custom-container>
 
@@ -29,7 +29,7 @@ or, il serait plus intéressant de centrer sur les données **GeoJSON** directem
 Pour cela, on utilise la fonction `fit()` de `map.getView()`, 
 qui prend en paramètre la **géométrie** de la **feature**[^1] à centrer et un **padding** pour laisser de l'espace autour de la **feature**.
 
-[Code de la démonstration](/codes/puzzle54#afficher-les-donnees-geojson-sur-la-carte) et le résultat :
+[Code de la démonstration](/annexe/codes/puzzle54#afficher-les-donnees-geojson-sur-la-carte) et le résultat :
 
 <openlayers-demo-geojson />
 
@@ -42,7 +42,7 @@ Ensuite, on ajoute simplement ce `layer.Vector` à la carte.
 Pour modifier l'apparence des pièces du puzzle, donc les **cantons**, on peut définir un **style** de type `style.Style` dans le `layer.Vector`.
 Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités de personnalisation, mais on peut quand même changer la **couleur**, la **bordure** et afficher un **texte**.
 
-[Code de la démonstration](/codes/puzzle54#modifier-l-apparence-des-pieces-du-puzzle) et le résultat :
+[Code de la démonstration](/annexe/codes/puzzle54#modifier-l-apparence-des-pieces-du-puzzle) et le résultat :
 
 <openlayers-demo-style />
 
@@ -57,7 +57,7 @@ Ensuite pour les déplacer, on ajoute une **interaction** de type `interaction.T
 via la **sélection** de l'**interaction** `Select`.
 Pour finir, on ajoute les **interactions** à la carte.
 
-[Code de la démonstration](/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) 
+[Code de la démonstration](/annexe/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) 
 et le résultat (cliquez sur une pièce pour pouvoir ensuite la déplacer) :
 
 <openlayers-demo-interaction />
@@ -79,7 +79,7 @@ et si la différence est inférieure à une certaine valeur, on dit que la pièc
 Quand une pièce est bien positionnée, on la supprime et on change le style de la pièce de la référence,
 c'est ce qui donne cet effet **d'aimant**.
 
-[Code de la démonstration](/codes/puzzle54#creer-notre-puzzle) et le résultat :
+[Code de la démonstration](/annexe/codes/puzzle54#creer-notre-puzzle) et le résultat :
 
 <openlayers-demo-puzzle />
 

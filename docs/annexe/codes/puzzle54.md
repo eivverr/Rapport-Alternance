@@ -42,7 +42,7 @@ layerSource.once('featuresloadend', function() {
 
 :::
 
-[Retour à la réalisation du projet ↩︎](/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte)
+[Retour à la réalisation du projet ↩︎](/projects/creations/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte)
 
 ## Modifier l'apparence des pièces du puzzle
 
@@ -123,7 +123,7 @@ sourceDepartement.once('featuresloadend', function() {
 
 :::
 
-[Retour à la réalisation du projet ↩︎](/puzzle54/realisation#modifier-l-apparence-des-pieces-du-puzzle)
+[Retour à la réalisation du projet ↩︎](/projects/creations/puzzle54/realisation#modifier-l-apparence-des-pieces-du-puzzle)
 
 ## Permettre de déplacer les pièces du puzzle
 
@@ -218,7 +218,7 @@ sourceDepartement.once('featuresloadend', function() {
 
 :::
 
-[Retour à la réalisation du projet ↩︎](/puzzle54/realisation#permettre-de-deplacer-les-pieces-du-puzzle)
+[Retour à la réalisation du projet ↩︎](/projects/creations/puzzle54/realisation#permettre-de-deplacer-les-pieces-du-puzzle)
 
 ## Créer notre puzzle
 
@@ -405,4 +405,4 @@ sourceCantons.once('featuresloadend', function() { // [!code ++]
 
 :::
 
-[Retour à la réalisation du projet ↩︎](/puzzle54/realisation#creer-notre-puzzle)
+[Retour à la réalisation du projet ↩︎](/projects/creations/puzzle54/realisation#creer-notre-puzzle)
