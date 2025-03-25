@@ -1,4 +1,14 @@
+<script setup>
+import CustomContainer from '/components/CustomContainer.vue'
+</script>
+
 # Web App fullstack de restauration de sauvegarde
+
+<custom-container type="warning">
+<p>
+Ce projet est pour le moment en pause, je terminerai cette partie du rapport une fois que le projet sera terminé.
+</p>
+</custom-container>
 
 ## Introduction
 

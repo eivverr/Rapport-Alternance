@@ -4,6 +4,12 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 # Maptour château de Lunèville
 
+<custom-container type="danger">
+<p>
+Pour une raison encore inconnue, le projet ne fonctionne plus correctement.
+</p>
+</custom-container>
+
 <custom-container type="info">
 <p>
 <a target="_blank" href="https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=maptour_chateau_luneville">Lien vers le projet</a> <i>(version publique)</i>.

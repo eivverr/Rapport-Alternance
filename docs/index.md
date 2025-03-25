@@ -13,10 +13,10 @@ hero:
       link: /home
     - theme: alt
       text: Présentation du service
-      link: /presentation
+      link: /intro/presentation
     - theme: alt
       text: Puzzle54
-      link: /puzzle54/intro
+      link: /projects/creations/puzzle54/intro
 
 features:
   - icon:
