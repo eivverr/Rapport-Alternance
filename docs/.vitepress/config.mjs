@@ -27,11 +27,22 @@ export default defineConfig({
             { text: 'Projets du service', link: 'https://webcarto.infogeo54.fr/' },
             { text: 'Projets',
                 items: [
-                    { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
-                    { text: 'Maptour', link: '/projects/upgrades/maptour' },
-                    { text: 'Puzzle54', link: '/projects/creations/puzzle54/intro' },
-                    { text: 'Script restauration', link: '/projects/creations/script-restauration' },
-                    { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' }
+                    {
+                        text: 'Améliorations',
+                        items: [
+                            { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
+                            { text: 'Maptour', link: '/projects/upgrades/maptour' },
+                            { text: 'Atlas', link: '/projects/upgrades/atlas' }
+                        ]
+                    },
+                    {
+                        text: 'Créations',
+                        items: [
+                            { text: 'Puzzle54', link: '/projects/creations/puzzle54/intro' },
+                            { text: 'Script restauration', link: '/projects/creations/script-restauration' },
+                            { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' }
+                        ]
+                    }
             ] }
         ],
 
@@ -59,7 +70,8 @@ export default defineConfig({
                         collapsed: false,
                         items: [
                             { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
-                            { text: 'Maptour', link: '/projects/upgrades/maptour' }
+                            { text: 'Maptour', link: '/projects/upgrades/maptour' },
+                            { text: 'Atlas', link: '/projects/upgrades/atlas' }
                         ]
                     },
                     {
@@ -97,6 +109,7 @@ export default defineConfig({
                         text: 'Codes',
                         collapsed: false,
                         items: [
+                            { text: 'Atlas', link: '/annexe/codes/atlas' },
                             { text: 'Puzzle54', link: '/annexe/codes/puzzle54' },
                             { text: 'Script restauration', link: '/annexe/codes/script-restauration' }
                         ]

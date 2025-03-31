@@ -6,7 +6,7 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 <custom-container type="danger">
 <p>
-Pour une raison encore inconnue, le projet ne fonctionne plus correctement.
+Pour une raison encore inconnue, le projet ne fonctionne plus correctement. Le projet ne zoom plus sur les points d'intérêt.
 </p>
 </custom-container>
 

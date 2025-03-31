@@ -4,12 +4,6 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 # Puzzle54
 
-<custom-container type="danger">
-<p>
-Pour une raison encore inconnue, le projet ne fonctionne plus correctement, il est donc impossible de le tester.
-</p>
-</custom-container>
-
 <custom-container type="info">
 <p><a target="_blank" href="https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=puzzle_cd54">Lien vers le projet</a></p>
 </custom-container>
