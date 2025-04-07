@@ -46,6 +46,6 @@ On doit donc décocher toutes les autres checkboxs des couches de données attri
 ### Démo
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
-    <source src="/video/demo-atlas.mkv?url" type="video/mp4">
+    <source src="/video/demo-atlas.mp4" type="video/mp4">
     Your browser does not support the video tag. 
 </video>

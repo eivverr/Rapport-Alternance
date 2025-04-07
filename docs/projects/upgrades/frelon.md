@@ -79,7 +79,7 @@ cela ce fait via une popup qui s'ouvre en cliquant sur le bouton **Couche** en h
 Mon maître d'apprentissage m'a demandé de modifier cette popup pour qu'elle soit affiché au même endroit que les formulaires.
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
-    <source src="/video/demo-frelon-popup.mkv?url" type="video/mp4">
+    <source src="/video/demo-frelon-popup.mp4" type="video/mp4">
     Your browser does not support the video tag. 
 </video>
 

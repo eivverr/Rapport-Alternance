@@ -68,7 +68,7 @@ Le script se déroule en plusieurs étapes :
 ### Exemple d'utilisation
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
-    <source src="/video/demo-script-restauration.mkv?url" type="video/mp4">
+    <source src="/video/demo-script-restauration.mp4" type="video/mp4">
     Your browser does not support the video tag. 
 </video>
 
