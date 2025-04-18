@@ -1,6 +1,6 @@
 # Présentation du service
 
-Le **Conseil départemental de Meurthe-et-Moselle** est une **collectivité locale**, comme la commune et le conseil régional. 
+Le **Conseil départemental de Meurthe-et-Moselle** est une **collectivité locale**[^1], comme la commune et le conseil régional. 
 Son champ d'action est le département.
 
 <img style="margin: 0 auto;" src="/img/meurthe-et-moselle.png?url" width="200">
@@ -45,3 +45,5 @@ des **jeux de données** ou des **applications web** à destination des autres s
 Vous retrouverez toutes leurs réalisations publiques sur le site [webcarto.infogeo54.fr](https://webcarto.infogeo54.fr/).
 
 <iframe src="/pdf/Org_Developpement.pdf" width="100%" height="500px"></iframe>
+
+[^1]: Autorité publique distincte de l'État. Chaque collectivité (commune, département, région) est dotée d’un exécutif et d’une assemblée délibérante élue au suffrage universel. Elle exerce librement ses prérogatives en complément de l’action de l’État.

@@ -15,6 +15,11 @@ Une partie du code du projet se trouve sur <a href="/annexe/codes/atlas">cette p
 
 ## Introduction
 
+L'atlas départemental de Meurthe-et-Moselle est un projet de cartographie développé pour le **Conseil Départemental de Meurthe-et-Moselle** sur **Lizmap**.
+Il permet de visualiser les différentes couches de données du département, comme l'évolution de la population, le taux de pauvreté, etc.
+
+Mon objectif sur ce projet était d'améliorer l'interface de l'application pour qu'elle soit plus agréable à utiliser et plus facile à comprendre.
+
 ## Missions
 
 - [Actualiser le tableau lors d'un click sur un checkbox](#actualisation-du-tableau)

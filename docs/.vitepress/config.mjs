@@ -24,11 +24,11 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Site du service', link: 'https://infogeo54.fr/' },
-            { text: 'Projets du service', link: 'https://webcarto.infogeo54.fr/' },
-            { text: 'Projets',
+            { text: 'Projets public du service', link: 'https://webcarto.infogeo54.fr/' },
+            { text: 'Liste des projets',
                 items: [
                     {
-                        text: 'Améliorations',
+                        text: 'Projets améliorés',
                         items: [
                             { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
                             { text: 'Maptour', link: '/projects/upgrades/maptour' },
@@ -36,11 +36,12 @@ export default defineConfig({
                         ]
                     },
                     {
-                        text: 'Créations',
+                        text: 'Projets créés',
                         items: [
                             { text: 'Puzzle54', link: '/projects/creations/puzzle54/intro' },
                             { text: 'Script restauration', link: '/projects/creations/script-restauration' },
-                            { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' }
+                            { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' },
+                            { text: 'Atlas', link: '/projects/creations/atlas/intro' }
                         ]
                     }
             ] }
@@ -63,40 +64,44 @@ export default defineConfig({
                 ]
             },
             {
-                text: 'Projets',
+                text: 'Projets améliorés',
+                collapsed: false,
+                items: [
+                        { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
+                        { text: 'Maptour', link: '/projects/upgrades/maptour' },
+                        { text: 'Atlas', link: '/projects/upgrades/atlas' }
+                ]
+            },
+            {
+                text: 'Projets créés',
+                collapsed: false,
                 items: [
                     {
-                        text: 'Améliorations',
-                        collapsed: false,
+                        text: 'Puzzle54',
+                        collapsed: true,
+                        link: '/projects/creations/puzzle54/intro',
                         items: [
-                            { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
-                            { text: 'Maptour', link: '/projects/upgrades/maptour' },
-                            { text: 'Atlas', link: '/projects/upgrades/atlas' }
+                            { text: 'Veille technologique', link: '/projects/creations/puzzle54/veille-techno' },
+                            { text: 'Réalisation', link: '/projects/creations/puzzle54/realisation' }
+                        ]
+                    },
+                    { text: 'Script restauration', link: '/projects/creations/script-restauration' },
+                    {
+                        text: 'Restauration web',
+                        collapsed: true,
+                        link: '/projects/creations/restauration-web/intro',
+                        items: [
+                            { text: 'Veille technologique', link: '/projects/creations/restauration-web/veille-techno' },
+                            { text: 'Réalisation', link: '/projects/creations/restauration-web/realisation' }
                         ]
                     },
                     {
-                        text: 'Créations',
-                        collapsed: false,
+                        text: 'Atlas',
+                        collapsed: true,
+                        link: '/projects/creations/atlas/intro',
                         items: [
-                            {
-                                text: 'Puzzle54',
-                                collapsed: true,
-                                link: '/projects/creations/puzzle54/intro',
-                                items: [
-                                    { text: 'Veille technologique', link: '/projects/creations/puzzle54/veille-techno' },
-                                    { text: 'Réalisation', link: '/projects/creations/puzzle54/realisation' }
-                                ]
-                            },
-                            { text: 'Script restauration', link: '/projects/creations/script-restauration' },
-                            {
-                                text: 'Restauration web',
-                                collapsed: true,
-                                link: '/projects/creations/restauration-web/intro',
-                                items: [
-                                    { text: 'Veille technologique', link: '/projects/creations/restauration-web/veille-techno' },
-                                    { text: 'Réalisation', link: '/projects/creations/restauration-web/realisation' }
-                                ]
-                            }
+                            { text: 'Veille technologique', link: '/projects/creations/atlas/veille-techno' },
+                            { text: 'Réalisation', link: '/projects/creations/atlas/realisation' }
                         ]
                     }
                 ]

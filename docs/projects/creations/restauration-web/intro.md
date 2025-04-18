@@ -4,7 +4,7 @@ import CustomContainer from '/components/CustomContainer.vue'
 
 # Web App fullstack de restauration de sauvegarde
 
-<custom-container type="warning">
+<custom-container type="todo">
 <p>
 Ce projet est pour le moment en pause, je terminerai cette partie du rapport une fois que le projet sera terminé.
 </p>
@@ -12,7 +12,7 @@ Ce projet est pour le moment en pause, je terminerai cette partie du rapport une
 
 ## Introduction
 
-Ce projet est une amélioration du [script de restauration](/projects/creations/script-restauration) en une application web fullstack.
+Ce projet est une amélioration du [script de restauration](/projects/creations/script-restauration) en une **application web fullstack**.
 Tout comme le script, cette application permet de restaurer des sauvegardes de données, mais avec une interface web plus conviviale.
 
 Ce projet a été réalisé en **Python** pour le backend avec [Flask](/projects/creations/restauration-web/veille-techno#flask-pour-le-backend) 
