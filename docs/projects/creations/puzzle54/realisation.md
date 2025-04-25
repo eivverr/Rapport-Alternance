@@ -1,21 +1,20 @@
 <script setup>
-import CustomContainer from '/components/CustomContainer.vue';
-import OpenlayersDemoGeojson from '/components/OpenlayersDemoGeojson.vue';
-import OpenlayersDemoStyle from '/components/OpenlayersDemoStyle.vue';
-import OpenlayersDemoInteraction from '/components/OpenlayersDemoInteraction.vue';
-import OpenlayersDemoPuzzle from '/components/OpenlayersDemoPuzzle.vue';
+import OpenlayersDemoGeojson from './components/OpenlayersDemoGeojson.vue';
+import OpenlayersDemoStyle from './components/OpenlayersDemoStyle.vue';
+import OpenlayersDemoInteraction from './components/OpenlayersDemoInteraction.vue';
+import OpenlayersDemoPuzzle from './components/OpenlayersDemoPuzzle.vue';
 </script>
 
 # Réaliser un puzzle en web avec des données GeoJSON
 
-<custom-container type="info">
+<CustomContainer type="info">
 <p>
 Pour les démonstrations de code, je vais utiliser des données <b>GeoJSON</b> disponible sur le site <a href="https://france-geojson.gregoiredavid.fr" target="_blank">France GeoJSON</a>.
 </p>
 <p>
 De plus, les codes seront disponibles dans la partie <a href="/annexe/codes/puzzle54">Codes du projet Puzzle54</a> pour plus de clarté.
 </p>
-</custom-container>
+</CustomContainer>
 
 Comme expliqué précédemment, il est possible d'afficher des données **GeoJSON** sur une carte **OpenLayers**, ce qui est parfait, 
 car les données de l'**api** du **Conseil Départemental de Meurthe-et-Moselle** sont en **GeoJSON**.
@@ -31,7 +30,7 @@ qui prend en paramètre la **géométrie** de la **feature**[^1] à centrer et u
 
 [Code de la démonstration](/annexe/codes/puzzle54#afficher-les-donnees-geojson-sur-la-carte) et le résultat :
 
-<openlayers-demo-geojson />
+<OpenlayersDemoGeojson />
 
 ## Modifier l'apparence des pièces du puzzle
 
@@ -44,7 +43,7 @@ Bon malheureusement, **OpenLayers** ne propose pas énormément de possibilités
 
 [Code de la démonstration](/annexe/codes/puzzle54#modifier-l-apparence-des-pieces-du-puzzle) et le résultat :
 
-<openlayers-demo-style />
+<OpenlayersDemoStyle />
 
 ## Permettre de déplacer les pièces du puzzle
 
@@ -60,7 +59,7 @@ Pour finir, on ajoute les **interactions** à la carte.
 [Code de la démonstration](/annexe/codes/puzzle54#permettre-de-deplacer-les-pieces-du-puzzle) 
 et le résultat (cliquez sur une pièce pour pouvoir ensuite la déplacer) :
 
-<openlayers-demo-interaction />
+<OpenlayersDemoInteraction />
 
 ## Créer notre puzzle
 
@@ -81,7 +80,7 @@ c'est ce qui donne cet effet **d'aimant**.
 
 [Code de la démonstration](/annexe/codes/puzzle54#creer-notre-puzzle) et le résultat :
 
-<openlayers-demo-puzzle />
+<OpenlayersDemoPuzzle />
 
 Et voilà, nous avons notre **puzzle en ligne**, le plus gros du travail est fait, si vous regardez le [projet](https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=puzzle_cd54),
 vous verrez que le projet est plus complet, mais je ne vais pas parler des petites modifications que j'ai pu faire pour améliorer le projet.

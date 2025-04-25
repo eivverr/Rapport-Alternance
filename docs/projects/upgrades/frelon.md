@@ -1,17 +1,13 @@
-<script setup>
-import CustomContainer from '/components/CustomContainer.vue'
-</script>
-
 # Frelon signalement 54
 
-<custom-container type="info">
+<CustomContainer type="info">
 <p>
 <a target="_blank" href="https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=Frelon_signalement_public">Lien vers le projet</a> <i>(version publique)</i>.
 </p>
 <p>
 La version présentée ici est la version <strong>Admin</strong> du projet, vous n'aurez donc pas accès à la carte des signalements et vous n'aurez que des images de l'interface pour illustrer les améliorations apportées.
 </p>
-</custom-container>
+</CustomContainer>
 
 ## Introduction
 

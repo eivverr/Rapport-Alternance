@@ -1,5 +1,5 @@
 <script setup>
-import ExamplePrimevue from '/components/ExamplePrimevue.vue'
+import ExamplePrimevue from './components/ExamplePrimevue.vue'
 </script>
 
 # Veille technologique

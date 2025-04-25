@@ -1,17 +1,13 @@
-<script setup>
-import CustomContainer from '/components/CustomContainer.vue'
-</script>
-
 # Atlas départemental de Meurthe-et-Moselle
 
-<custom-container type="info">
+<CustomContainer type="info">
 <p>
 La version présentée ici est la version <strong>Admin</strong> du projet, vous n'aurez donc pas accès à la carte des signalements et vous n'aurez que des images de l'interface pour illustrer les améliorations apportées.
 </p>
 <p>
 Une partie du code du projet se trouve sur <a href="/annexe/codes/atlas">cette page</a>.
 </p>
-</custom-container>
+</CustomContainer>
 
 ## Introduction
 

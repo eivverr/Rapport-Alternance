@@ -1,20 +1,16 @@
-<script setup>
-import CustomContainer from '/components/CustomContainer.vue'
-</script>
-
 # Maptour château de Lunèville
 
-<custom-container type="danger">
+<CustomContainer type="danger">
 <p>
 Pour une raison encore inconnue, le projet ne fonctionne plus correctement. Le projet ne zoom plus sur les points d'intérêt.
 </p>
-</custom-container>
+</CustomContainer>
 
-<custom-container type="info">
+<CustomContainer type="info">
 <p>
 <a target="_blank" href="https://webcarto.infogeo54.fr/index.php/view/map?repository=public&project=maptour_chateau_luneville">Lien vers le projet</a> <i>(version publique)</i>.
 </p>
-</custom-container>
+</CustomContainer>
 
 ## Introduction
 
@@ -81,7 +77,7 @@ Ensuite, dans le body de ma **Modal**, j'ajoute le contenu de la popup de l'api 
 
 ```javascript
 <div class="modal-body">
-    <img alt="" src="https://webcarto.infogeo54.fr/index.php/view/media/getMedia?repository=${repositoryName}&project=${projectName}&path=${img}">
+    <img alt="" src="https://webcarto.infogeo54.fr/index.php/view/media/getMedia?repository=${repositoryName}&project=${projectName}&path=${img}" />
     <p>${texte}</p>
 </div>
 ```

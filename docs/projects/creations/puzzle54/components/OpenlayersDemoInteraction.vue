@@ -1,5 +1,4 @@
 <script setup>
-import OpenlayersMap from "./OpenlayersMap.vue";
 import { Map } from "ol";
 import { View } from "ol";
 import { Vector as VectorLayer } from "ol/layer";

@@ -4,8 +4,13 @@ import DefaultTheme from 'vitepress/theme'
 import PrimeVue from 'primevue/config'
 import Aura from '@primeuix/themes/aura';
 import 'ol/ol.css'
-import './style.css'
-import './custom.css'
+import './styles/style.css'
+import './styles/custom.css'
+
+// Components
+import CustomContainer from "./components/CustomContainer.vue";
+import ComponentExample from "./components/ComponentExample.vue";
+import OpenlayersMap from "./components/OpenlayersMap.vue";
 
 // PrimeVue
 import 'primeicons/primeicons.css'
@@ -30,6 +35,9 @@ export default {
         },
       },
     })
+    app.component('CustomContainer', CustomContainer)
+    app.component('ComponentExample', ComponentExample)
+    app.component('OpenlayersMap', OpenlayersMap)
     app.component('Button', Button)
     app.component('Card', Card)
     // ...

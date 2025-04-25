@@ -1,6 +1,5 @@
 <script setup>
-import CustomContainer from '/components/CustomContainer.vue'
-import OpenlayersDemo from '/components/OpenlayersDemo.vue';
+import OpenlayersDemo from './components/OpenlayersDemo.vue';
 </script>
 
 # Veille technologique
@@ -65,12 +64,12 @@ script.onerror = function() {
 document.head.appendChild(script);
 ````
 
-<custom-container type="info">
+<CustomContainer type="info">
 <p>
 Comme <b>Lizmap</b> n'aime pas les <code>import</code>, pour pouvoir organiser le projet avec plusieurs fichiers, 
 je dois utiliser <code>window.</code>, au lieu de <code>export</code>, suivit de ma fonction ou de ma variable pour les rendre globales et pouvoir les utiliser dans d'autres fichiers.
 </p>
-</custom-container>
+</CustomContainer>
 
 #### Exemple de code
 
@@ -105,7 +104,7 @@ function initOpenLayersMap() {
 
 **Démo d'OpenLayers** avec le code ci-dessus :
 
-<openlayers-demo/>
+<OpenlayersDemo />
 
 [^1]: La **license BSD** (Berkeley Software Distribution License) est une licence libre utilisée pour la distribution de logiciels. 
 Elle permet de réutiliser tout ou une partie du logiciel sans restriction, qu'il soit intégré dans un logiciel **libre** ou **propriétaire**.

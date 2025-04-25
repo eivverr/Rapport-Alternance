@@ -114,9 +114,10 @@ export default defineConfig({
                         text: 'Codes',
                         collapsed: false,
                         items: [
-                            { text: 'Atlas', link: '/annexe/codes/atlas' },
+                            { text: 'Atlas départemental', link: '/annexe/codes/atlas' },
                             { text: 'Puzzle54', link: '/annexe/codes/puzzle54' },
-                            { text: 'Script restauration', link: '/annexe/codes/script-restauration' }
+                            { text: 'Script restauration', link: '/annexe/codes/script-restauration' },
+                            { text: 'OGCviewer', link: '/annexe/codes/ogcviewer' }
                         ]
                     }
                 ]

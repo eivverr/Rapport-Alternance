@@ -1,5 +1,4 @@
 <script setup>
-import OpenlayersMap from "./OpenlayersMap.vue";
 import Map from 'ol/Map'
 import TileLayer from 'ol/layer/Tile'
 import View from 'ol/View'

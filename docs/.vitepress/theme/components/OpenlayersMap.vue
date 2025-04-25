@@ -13,7 +13,7 @@ const props = defineProps({
 })
 
 onMounted(() => {
-    props.initOpenLayersMap(props.mapId);
+    props.initOpenLayersMap();
 })
 </script>
 

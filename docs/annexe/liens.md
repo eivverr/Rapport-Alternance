@@ -23,6 +23,10 @@ Vous trouverez ici la liste des liens qui se trouvent dans le rapport.
 - VitePress : [vitepress.vuejs.org](https://vitepress.vuejs.org/)
 - Vue.js : [v3.vuejs.org](https://v3.vuejs.org/)
 - Webcarto : [webcarto.infogeo54.fr](https://webcarto.infogeo54.fr/)
+- Webcarto Opendata : [webcarto.infogeo54.fr/index.php/view/map?repository=opendata&project=opendata](https://webcarto.infogeo54.fr/index.php/view/map?repository=opendata&project=opendata)
+- Webcarto Opendata WMS : [webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities](https://webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities)
+- Webcarto Opendata WFS XML : [webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&typename=Colleges](https://webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&typename=Colleges)
+- Webcarto Opendata WFS JSON : [webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&typename=Colleges&outputFormat=application/json](https://webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&typename=Colleges&outputFormat=application/json)
 - World Puzzle : [ol-puzzle.s3-website-eu-west-1.amazonaws.com](http://ol-puzzle.s3-website-eu-west-1.amazonaws.com/)
 
 ## Sources

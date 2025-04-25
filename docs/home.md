@@ -1,15 +1,10 @@
-<script setup>
-import CustomContainer from '/components/CustomContainer.vue';
-import ComponentExample from '/components/ComponentExample.vue'
-</script>
-
 # Accueil
 
-<custom-container type="warning">
+<CustomContainer type="warning">
 <p>
 Ce site est en cours de construction. Certaines parties ne sont pas encore disponibles ou incomplètes.
 </p>
-</custom-container>
+</CustomContainer>
 
 Bienvenue sur mon rapport d'alternance pour ma troisième année de BUT Informatique[^1] à l'[IUT Nancy-Charlemagne](https://iut-charlemagne.univ-lorraine.fr/).
 
@@ -19,18 +14,18 @@ Cela me permettra de présenter mon rapport d'alternance de manière plus **inte
 
 En voici un petit exemple :
 
-<component-example />
+<ComponentExample />
 
 ## Informations sur mon alternance
 
-<custom-container type="info">
+<CustomContainer type="info">
 <ul>
     <li><strong>Entreprise/Service</strong> : Conseil Départemental de Meurthe-et-Moselle</li>
     <li><strong>Alternant</strong> : Weier Loris</li>
     <li><strong>Maître d'apprentissage</strong> : Hervé Vitoux</li>
     <li><strong>Tuteur universitaire</strong> : Boumaza Amine</li>
 </ul>
-</custom-container>
+</CustomContainer>
 
 ## Les différentes parties de mon rapport d'alternance
 

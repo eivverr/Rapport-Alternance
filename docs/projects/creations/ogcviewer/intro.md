@@ -1,15 +1,11 @@
-<script setup>
-import CustomContainer from '/components/CustomContainer.vue'
-</script>
-
 # Atlas
 
-<custom-container type="warning">
+<CustomContainer type="warning">
 <p>
 Ce projet est en cours de développement et n'est pas encore terminé. 
 Les images/vidéos ne représentent pas la version finale du projet.
 </p>
-</custom-container>
+</CustomContainer>
 
 ## Introduction
 
