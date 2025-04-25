@@ -10,7 +10,7 @@ import OpenlayersDemoPuzzle from '/components/OpenlayersDemoPuzzle.vue';
 
 <custom-container type="info">
 <p>
-Pour les démonstrations de code, je vais utiliser des données <b>GeoJSON</b> disponible sur le site <a href="https://france-geojson.gregoiredavid.fr">France GeoJSON</a>.
+Pour les démonstrations de code, je vais utiliser des données <b>GeoJSON</b> disponible sur le site <a href="https://france-geojson.gregoiredavid.fr" target="_blank">France GeoJSON</a>.
 </p>
 <p>
 De plus, les codes seront disponibles dans la partie <a href="/annexe/codes/puzzle54">Codes du projet Puzzle54</a> pour plus de clarté.

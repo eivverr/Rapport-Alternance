@@ -33,12 +33,15 @@ Vous trouverez ici la liste des liens qui se trouvent dans le rapport.
 - Flask : [wikipedia.org/wiki/Flask_(framework)](https://fr.wikipedia.org/wiki/Flask_(framework))
 - Fondation Open Source Geospatial : [wikipedia.org/wiki/Open_Source_Geospatial_Foundation](https://fr.wikipedia.org/wiki/Open_Source_Geospatial_Foundation)
 - GeoJSON : [fr.wikipedia.org/wiki/GeoJSON](https://fr.wikipedia.org/wiki/GeoJSON)
+- Open Geospatial Consortium : [wikipedia.org/wiki/Open_Geospatial_Consortium](https://fr.wikipedia.org/wiki/Open_Geospatial_Consortium)
 - Open Source Initiative : [wikipedia.org/wiki/Open_Source_Initiative](https://fr.wikipedia.org/wiki/Open_Source_Initiative)
 - OpenLayers : [wikipedia.org/wiki/OpenLayers](https://fr.wikipedia.org/wiki/OpenLayers)
 - OpenStreetMap : [wikipedia.org/wiki/OpenStreetMap](https://fr.wikipedia.org/wiki/OpenStreetMap)
 - Leaflet : [wikipedia.org/wiki/Leaflet](https://fr.wikipedia.org/wiki/Leaflet)
 - License BSD : [wikipedia.org/wiki/Licence_BSD](https://fr.wikipedia.org/wiki/Licence_BSD)
 - Vue.js : [wikipedia.org/wiki/Vue.js](https://fr.wikipedia.org/wiki/Vue.js)
+- Web Feature Service (WFS) : [wikipedia.org/wiki/Web_Feature_Service](https://fr.wikipedia.org/wiki/Web_Feature_Service)
+- Web Map Service (WMS) : [wikipedia.org/wiki/Web_Map_Service](https://fr.wikipedia.org/wiki/Web_Map_Service)
 
 ### Autres
 

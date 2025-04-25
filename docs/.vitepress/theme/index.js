@@ -3,6 +3,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import PrimeVue from 'primevue/config'
 import Aura from '@primeuix/themes/aura';
+import 'ol/ol.css'
 import './style.css'
 import './custom.css'
 

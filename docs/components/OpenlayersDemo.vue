@@ -1,19 +1,24 @@
 <script setup>
 import OpenlayersMap from "./OpenlayersMap.vue";
+import Map from 'ol/Map'
+import TileLayer from 'ol/layer/Tile'
+import View from 'ol/View'
+import OSM from 'ol/source/OSM'
+import { fromLonLat } from 'ol/proj'
 
 const id = "demo-openlayer";
 
 // Initialiser la carte OpenLayers
 function initOpenLayersMap() {
-    const map = new ol.Map({
+    const map = new Map({
         target: id,
         layers: [
-            new ol.layer.Tile({
-                source: new ol.source.OSM(),
+            new TileLayer({
+                source: new OSM(),
             }),
         ],
-        view: new ol.View({
-            center: ol.proj.fromLonLat([2.35, 48.85]), // Paris
+        view: new View({
+            center: fromLonLat([2.35, 48.85]), // Paris
             zoom: 12,
         }),
     });
@@ -21,7 +26,7 @@ function initOpenLayersMap() {
 </script>
 
 <template>
-    <openlayers-map :map-id="id" :init-open-layers-map="initOpenLayersMap" />
+    <OpenlayersMap :map-id="id" :init-open-layers-map="initOpenLayersMap" />
 </template>
 
 <style scoped>
