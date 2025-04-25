@@ -32,7 +32,7 @@ export default defineConfig({
                         items: [
                             { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
                             { text: 'Maptour', link: '/projects/upgrades/maptour' },
-                            { text: 'Atlas', link: '/projects/upgrades/atlas' }
+                            { text: 'Atlas départemental', link: '/projects/upgrades/atlas' }
                         ]
                     },
                     {
@@ -41,7 +41,7 @@ export default defineConfig({
                             { text: 'Puzzle54', link: '/projects/creations/puzzle54/intro' },
                             { text: 'Script restauration', link: '/projects/creations/script-restauration' },
                             { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' },
-                            { text: 'Atlas', link: '/projects/creations/atlas/intro' }
+                            { text: 'OGCviewer', link: '/projects/creations/ogcviewer/intro' }
                         ]
                     }
             ] }
@@ -69,7 +69,7 @@ export default defineConfig({
                 items: [
                         { text: 'Frelon signalement', link: '/projects/upgrades/frelon' },
                         { text: 'Maptour', link: '/projects/upgrades/maptour' },
-                        { text: 'Atlas', link: '/projects/upgrades/atlas' }
+                        { text: 'Atlas départemental', link: '/projects/upgrades/atlas' }
                 ]
             },
             {
@@ -96,12 +96,12 @@ export default defineConfig({
                         ]
                     },
                     {
-                        text: 'Atlas',
+                        text: 'OGCviewer',
                         collapsed: true,
-                        link: '/projects/creations/atlas/intro',
+                        link: '/projects/creations/ogcviewer/intro',
                         items: [
-                            { text: 'Veille technologique', link: '/projects/creations/atlas/veille-techno' },
-                            { text: 'Réalisation', link: '/projects/creations/atlas/realisation' }
+                            { text: 'Veille technologique', link: '/projects/creations/ogcviewer/veille-techno' },
+                            { text: 'Réalisation', link: '/projects/creations/ogcviewer/realisation' }
                         ]
                     }
                 ]

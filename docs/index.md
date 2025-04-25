@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: Puzzle54
       link: /projects/creations/puzzle54/intro
+    - theme: alt
+      text: OGCviewer
+      link: /projects/creations/ogcviewer/intro
 
 features:
   - icon:
