@@ -8,7 +8,7 @@ import DemoWMS from './components/DemoWMS.vue';
 
 ### WMS kézako ?
 
-Bon déjà c'est quoi un **WMS** ? Le **Web Map Service** est un standard de l'**OGC** ([Open Geospatial Consortium](https://fr.wikipedia.org/wiki/Open_Geospatial_Consortium)) 
+Bon déjà, c'est quoi un **WMS** ? Le **Web Map Service** est un standard de l'**OGC** ([Open Geospatial Consortium](https://fr.wikipedia.org/wiki/Open_Geospatial_Consortium)) 
 qui permet de servir des cartes géographiques sur le web.
 Il permet de récupérer des **images** de cartes à partir de données géographiques stockées sur un serveur.
 
@@ -28,7 +28,7 @@ pour voir la différence entre les deux :
 
 Pour afficher une carte avec des couches de données **WMS** dans **OpenLayers**, il faut créer un objet `layer.Tile` avec une source de type `source.TileWMS`.
 
-[Code de la démonstration](/annexe/codes/ogcviewer/#afficher-une-carte-avec-des-couches-de-donnees-wms) et le résultat :
+[Code de la démonstration](/annexe/codes/ogcviewer#afficher-une-carte-avec-des-couches-de-donnees-wms) et le résultat :
 
 <DemoWMS />
 
