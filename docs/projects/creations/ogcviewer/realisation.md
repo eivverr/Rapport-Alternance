@@ -1,5 +1,6 @@
 <script setup>
 import DemoWMS from './components/DemoWMS.vue';
+import DemoChartjs from './components/DemoChartjs.vue';
 </script>
 
 # Réaliser une application cartographique
@@ -27,12 +28,31 @@ pour voir la différence entre les deux :
 ### WMS et OpenLayers
 
 Pour afficher une carte avec des couches de données **WMS** dans **OpenLayers**, il faut créer un objet `layer.Tile` avec une source de type `source.TileWMS`.
+Cet objet a besoins du nom de la couche à afficher, ainsi que l'URL du serveur **WMS**.
+On peut aussi ajouter des paramètres comme le nom du projet et du dépôt (important pour le projet **Opendata**, car il est mis en ligne via **Lizmap**).
+
+Ensuite, il faut ajouter cette couche à la carte.
 
 [Code de la démonstration](/annexe/codes/ogcviewer#afficher-une-carte-avec-des-couches-de-donnees-wms) et le résultat :
 
 <DemoWMS />
 
-## Demo du 18/04/2025
+## Afficher un graphique sur les couches de données
+
+Pour afficher un graphique sur les couches de données, j'ai utilisé la bibliothèque [Chart.js](https://www.chartjs.org/),
+qui est une bibliothèque JavaScript **open source gratuite** pour la visualisation de données.
+En plus, **PrimeVue** propose un [composant](https://www.primevue.org/chart/) qui permet d'afficher un graphique facilement avec **Chart.js**.
+
+Voici un exemple de graphique avec **Chart.js** (le code est celui de l'[exemple](https://primevue.org/chart/#pie) de **PrimeVue**) :
+
+<DemoChartjs />
+
+Comme je l'ai dit plus haut, les couches **WMS** ne contiennent que des images et aucune données.
+Pour en avoir, il faut donc utiliser le **WFS** pour récupérer les données de la couche au format **JSON**.
+J'ai déjà expliqué comment faire dans le projet [Puzzle54](/projects/creations/puzzle54/intro) dans la partie 
+[Afficher les données GeoJSON sur la carte](/projects/creations/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte).
+
+## Demo du 25/04/2025
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
     <source src="/video/demo-atlas-vuejs.mp4" type="video/mp4">

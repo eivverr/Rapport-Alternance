@@ -6,6 +6,7 @@ Vous trouverez ici la liste des liens qui se trouvent dans le rapport.
 
 - Bootstrap : [getbootstrap.com](https://getbootstrap.com/)
 - Bootstrap Modal : [getbootstrap.com/docs/5.3/components/modal](https://getbootstrap.com/docs/5.3/components/modal/)
+- Chart.js : [chartjs.org](https://www.chartjs.org/)
 - Flask : [flask.palletsprojects.com](https://flask.palletsprojects.com/)
 - France GeoJSON : [france-geojson.gregoiredavid.fr](https://france-geojson.gregoiredavid.fr/)
 - QGIS : [qgis.org](https://www.qgis.org/)

@@ -16,6 +16,7 @@ import OpenlayersMap from "./components/OpenlayersMap.vue";
 import 'primeicons/primeicons.css'
 import Button from 'primevue/button'
 import Card from 'primevue/card'
+import Chart from 'primevue/chart';
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -40,6 +41,7 @@ export default {
     app.component('OpenlayersMap', OpenlayersMap)
     app.component('Button', Button)
     app.component('Card', Card)
+    app.component('Chart', Chart)
     // ...
   }
 }

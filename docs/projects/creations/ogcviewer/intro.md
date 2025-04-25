@@ -44,8 +44,8 @@ et de pouvoir afficher des tableaux de données et des graphiques sur les couche
 
 ## Missions
 
-- Afficher une carte avec des couches de données de type **WMS**
-- Afficher un graphique sur les couches de données
+- [Afficher une carte avec des couches de données de type **WMS**](/projects/creations/ogcviewer/realisation#afficher-une-carte-avec-des-couches-de-donnees-wms)
+- [Afficher un graphique sur les couches de données](/projects/creations/ogcviewer/realisation#afficher-un-graphique-sur-les-couches-de-donnees)
 - Afficher un tableau de données sur les couches de données
 - Afficher des informations sur les couches de données au clic
 

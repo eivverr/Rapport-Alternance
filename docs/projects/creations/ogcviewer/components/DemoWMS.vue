@@ -36,6 +36,7 @@ function initOpenLayersMap() {
                 source: new OSM(),
             }),
             wmsLayer('Limite_du_departement'),
+            wmsLayer('Communes'),
             wmsLayer('Colleges'),
         ],
         view: new View({
