@@ -28,7 +28,7 @@ pour voir la différence entre les deux :
 
 Pour afficher une carte avec des couches de données **WMS** dans **OpenLayers**, il faut créer un objet `layer.Tile` avec une source de type `source.TileWMS`.
 
-[Code de la démonstration]() et le résultat :
+[Code de la démonstration](/annexe/codes/ogcviewer/#afficher-une-carte-avec-des-couches-de-donnees-wms) et le résultat :
 
 <DemoWMS />
 
