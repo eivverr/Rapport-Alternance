@@ -4,7 +4,14 @@
 
 ::: code-group
 
-```js [map.js]
+```typescript [map.ts]
+import Map from 'ol/Map'
+import TileLayer from 'ol/layer/Tile'
+import OSM from 'ol/source/OSM'
+import { wmsLayer } from './wms'
+import View from 'ol/View'
+import { fromLonLat } from 'ol/proj'
+
 // Initialiser la carte OpenLayers
 function initOpenLayersMap() {
     const map = new Map({
@@ -25,8 +32,11 @@ function initOpenLayersMap() {
 }
 ```
 
-```js [wms.js]
-function wmsSource(layerName) {
+```typescript [wms.ts]
+import TileWMS from 'ol/source/TileWMS'
+import TileLayer from 'ol/layer/Tile'
+
+function wmsSource(layerName: string): TileWMS {
     return new TileWMS({
         url: 'https://webcarto.infogeo54.fr/index.php/lizmap/service',
         params: {
@@ -39,7 +49,7 @@ function wmsSource(layerName) {
     })
 }
 
-export function wmsLayer(layerName) {
+export function wmsLayer(layerName: string): TileLayer {
     return new TileLayer({
         source: wmsSource(layerName),
         opacity: 1,

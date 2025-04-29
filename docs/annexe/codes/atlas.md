@@ -2,7 +2,7 @@
 
 ## Actualisation du tableau et décoche les autres checkbox
 
-```js
+```javascript
 lizMap.events.on({
     'uicreated': function (evt) {
 

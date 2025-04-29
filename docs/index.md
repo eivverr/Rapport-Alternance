@@ -3,22 +3,22 @@
 layout: home
 
 hero:
-  name: "WEIER Loris"
-  text: "Rapport d'alternance"
-  tagline: Mon rapport d'alternance pour ma troisième année de BUT Informatique
+  name: "Rapport d'alternance"
+  text: "Weier Loris"
+  tagline: Mon rapport d'alternance pour ma troisième année de BUT Informatique.
   image: /img/meurthe-et-moselle.png
   actions:
     - theme: brand
-      text: Accueil
+      text: 🏠 Accueil
       link: /home
     - theme: alt
-      text: Présentation du service
+      text: 📄 Présentation du service
       link: /intro/presentation
     - theme: alt
-      text: Puzzle54
+      text: 🧩 Puzzle54
       link: /projects/creations/puzzle54/intro
     - theme: alt
-      text: OGCviewer
+      text: 🗺 OGCviewer
       link: /projects/creations/ogcviewer/intro
 
 features:

@@ -37,6 +37,31 @@ Ensuite, il faut ajouter cette couche à la carte.
 
 <DemoWMS />
 
+### Récupérer toutes les couches WMS disponibles
+
+On a vu comment afficher une couche **WMS**, mais comment savoir quelles couches sont disponibles sur le serveur ?
+Pour ça, il faut faire une requête **fetch** sur l'URL du serveur **WMS** avec le paramètre `REQUEST=GetCapabilities`.
+Cela va renvoyer un fichier **XML** avec toutes les couches disponibles sur le serveur.
+Il faut ensuite parser ce fichier **XML** pour récupérer les noms des couches et les afficher dans une liste.
+
+Voici un exemple de code pour récupérer les couches **WMS** disponibles sur le serveur **Opendata** :
+
+```typescript
+async function fetchCapabilities(): Promise<object> {
+    const response = await fetch(
+        `https://webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities`,
+    )
+    if (!response.ok) {
+        throw new Error('Network response was not ok')
+    }
+    const text = await response.text()
+    const parser = new WMSCapabilities() // Méthode de la bibliothèque OpenLayers qui permet de parser le fichier XML
+    return parser.read(text)
+}
+```
+
+Cela renvoie un objet avec toutes les couches disponibles et leurs informations (nom, description, etc.).
+
 ## Afficher un graphique sur les couches de données
 
 Pour afficher un graphique sur les couches de données, j'ai utilisé la bibliothèque [Chart.js](https://www.chartjs.org/),
@@ -48,9 +73,12 @@ Voici un exemple de graphique avec **Chart.js** (le code est celui de l'[exemple
 <DemoChartjs />
 
 Comme je l'ai dit plus haut, les couches **WMS** ne contiennent que des images et aucune données.
-Pour en avoir, il faut donc utiliser le **WFS** pour récupérer les données de la couche au format **JSON**.
+Pour en avoir, il faut donc utiliser le **WFS** pour récupérer les données de la couche au format **JSON** ou **GeoJSON**.
 J'ai déjà expliqué comment faire dans le projet [Puzzle54](/projects/creations/puzzle54/intro) dans la partie 
 [Afficher les données GeoJSON sur la carte](/projects/creations/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte).
+
+Ici, on refait la même chose, mais on cache la couche **WFS**, on affiche déjà l'image de la couche **WMS**,
+le **WFS** ne sert qu'à récupérer les données pour afficher le graphique avec les données.
 
 ## Demo du 25/04/2025
 

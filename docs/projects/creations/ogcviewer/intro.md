@@ -1,4 +1,4 @@
-# Atlas
+# OGCViewer
 
 <CustomContainer type="warning">
 <p>
