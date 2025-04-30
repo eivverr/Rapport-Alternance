@@ -42,6 +42,8 @@ L'objectif de ce projet est de créer une application cartographique qui permet 
 de pouvoir cliquer sur les couches de données pour afficher des informations sur celles-ci,
 et de pouvoir afficher des tableaux de données et des graphiques sur les couches de données (*en gros, faire la même chose que **Lizmap** mais en mieux*).
 
+À la fin, il devra complétement remplacer l'[atlas départemental du service](https://infogeo54.fr/?page_id=1452).
+
 ## Missions
 
 - [Afficher une carte avec des couches de données de type **WMS**](/projects/creations/ogcviewer/realisation#afficher-une-carte-avec-des-couches-de-donnees-wms)

@@ -38,7 +38,7 @@ Vous trouverez ici la liste des liens qui se trouvent dans le rapport.
 - Webcarto Opendata WFS JSON : [webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&typename=Colleges&outputFormat=application/json](https://webcarto.infogeo54.fr/index.php/lizmap/service?repository=opendata&project=opendata&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&typename=Colleges&outputFormat=application/json)
 - World Puzzle : [ol-puzzle.s3-website-eu-west-1.amazonaws.com](http://ol-puzzle.s3-website-eu-west-1.amazonaws.com/)
 
-## Wikipedia
+### Wikipedia
 
 - Bootstrap : [wikipedia.org/wiki/Bootstrap](https://fr.wikipedia.org/wiki/Bootstrap)
 - Flask : [wikipedia.org/wiki/Flask_(framework)](https://fr.wikipedia.org/wiki/Flask_(framework))
