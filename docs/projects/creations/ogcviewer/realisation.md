@@ -82,7 +82,7 @@ le **WFS** ne sert qu'à récupérer les données pour afficher le graphique ave
 
 Une fois que la couche **WFS** a été chargée, on peut récupérer les données et les afficher dans le graphique.
 
-## Demo du 30/04/2025
+## Demo du 14/05/2025
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
     <source src="/video/demo-ogcviewer.mp4" type="video/mp4">
