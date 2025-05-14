@@ -80,9 +80,11 @@ J'ai déjà expliqué comment faire dans le projet [Puzzle54](/projects/creation
 Ici, on refait la même chose, mais on cache la couche **WFS**, on affiche déjà l'image de la couche **WMS**,
 le **WFS** ne sert qu'à récupérer les données pour afficher le graphique avec les données.
 
+Une fois que la couche **WFS** a été chargée, on peut récupérer les données et les afficher dans le graphique.
+
 ## Demo du 30/04/2025
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
-    <source src="/video/demo-atlas-vuejs.mp4" type="video/mp4">
+    <source src="/video/demo-ogcviewer.mp4" type="video/mp4">
     Your browser does not support the video tag. 
 </video>
