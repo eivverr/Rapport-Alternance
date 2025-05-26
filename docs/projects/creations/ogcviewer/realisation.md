@@ -1,6 +1,6 @@
 <script setup>
 import DemoWMS from './components/DemoWMS.vue';
-import DemoChartjs from './components/DemoChartjs.vue';
+import DemoECharts from './components/DemoECharts.vue';
 </script>
 
 # Réaliser une application cartographique
@@ -64,13 +64,13 @@ Cela renvoie un objet avec toutes les couches disponibles et leurs informations 
 
 ## Afficher un graphique sur les couches de données
 
-Pour afficher un graphique sur les couches de données, j'ai utilisé la bibliothèque [Chart.js](https://www.chartjs.org/),
+Pour afficher un graphique sur les couches de données, j'ai utilisé la bibliothèque [ECharts](https://echarts.apache.org/en/index.html)
 qui est une bibliothèque JavaScript **open source gratuite** pour la visualisation de données.
-En plus, **PrimeVue** propose un [composant](https://www.primevue.org/chart/) qui permet d'afficher un graphique facilement avec **Chart.js**.
+Elle est **beaucoup plus puissante** que [Chart.js](https://www.chartjs.org/) et permet de créer des graphiques interactifs et dynamiques.
 
-Voici un exemple de graphique avec **Chart.js** (le code est celui de l'[exemple](https://primevue.org/chart/#pie) de **PrimeVue**) :
+Voici un exemple de graphique avec **ECharts** ([code](https://echarts.apache.org/examples/en/editor.html?c=pie-simple)) :
 
-<DemoChartjs />
+<DemoECharts />
 
 Comme je l'ai dit plus haut, les couches **WMS** ne contiennent que des images et aucune données.
 Pour en avoir, il faut donc utiliser le **WFS** pour récupérer les données de la couche au format **JSON** ou **GeoJSON**.
@@ -82,7 +82,30 @@ le **WFS** ne sert qu'à récupérer les données pour afficher le graphique ave
 
 Une fois que la couche **WFS** a été chargée, on peut récupérer les données et les afficher dans le graphique.
 
-## Demo du 14/05/2025
+## Permettre de modifier/ajouter des graphiques
+
+Pour permettre de modifier/ajouter des graphiques, il nous faut un backend pour stocker les données des graphiques.
+J'ai donc créé un backend avec **Express** et une base de données **SQLite** pour stocker les données des graphiques.
+
+Voici à quoi ressemble la base de données **SQLite** :
+
+<iframe width="100%" height="500px" style="box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); border-radius:15px;" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Embedded DrawSQL IFrame" frameborder="0" src="https://drawsql.app/teams/test-4619/diagrams/ogcviewer-sqlite/embed"></iframe>
+
+### Faire un backend avec Express
+
+Pour faire un backend avec **Express**, on utilise la méthode **MVC** (Modèle-Vue-Contrôleur) qui permet de séparer la logique de l'application en trois parties :
+- **Modèle** : la partie qui gère les données et la logique de l'application (par exemple, la connexion à la base de données, les requêtes SQL, etc.).
+- **Vue** : la partie qui gère l'affichage des données (par exemple, les routes, les vues, etc.).
+- **Contrôleur** : la partie qui gère les interactions entre le modèle et la vue (par exemple, les requêtes HTTP, les réponses, etc.).
+
+Voici un [exemple de code](/annexe/codes/ogcviewer#faire-un-backend-avec-express) pour créer un backend avec **Express**.
+
+Maintenant, on peut faire des requêtes HTTP via le frontend pour récupérer les données des graphiques.
+On peut aussi ajouter des routes pour ajouter, modifier ou supprimer des graphiques.
+
+## Connexion LDAP pour l'authentification des admins
+
+## Demo du 26/05/2025
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
     <source src="/video/demo-ogcviewer.mp4" type="video/mp4">

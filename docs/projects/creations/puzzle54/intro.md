@@ -7,7 +7,7 @@
 ## Introduction
 
 J'ai réalisé **seul** ce projet (sauf pour les données de l'**api**), il a été réalisé en **JavaScript** avec la bibliothèque [OpenLayers](/projects/creations/puzzle54/veille-techno#presentation-d-openlayers),
-une bibliothèque **JavaScript open source** qui permet de créer des **cartes interactives** dans un navigateur web.
+une bibliothèque **JavaScript open source[^1]** qui permet de créer des **cartes interactives** dans un navigateur web.
 
 ## Objectif du projet
 
@@ -27,3 +27,6 @@ Mes missions sur ce projet ont été les suivantes :
     - [Modifier l'apparence des pièces du puzzle](/projects/creations/puzzle54/realisation#modifier-l-apparence-des-pieces-du-puzzle)
     - [Permettre de déplacer les pièces du puzzle](/projects/creations/puzzle54/realisation#permettre-de-deplacer-les-pieces-du-puzzle)
     - [Créer notre puzzle](/projects/creations/puzzle54/realisation#creer-notre-puzzle)
+
+[^1]: La désignation **open source**, s'applique aux logiciels dont la licence respecte des critères précisément établis par l'[Open Source Initiative](https://fr.wikipedia.org/wiki/Open_Source_Initiative),
+c'est-à-dire les possibilités de **libre redistribution**, d'**accès au code source** et de **création de travaux dérivés**.

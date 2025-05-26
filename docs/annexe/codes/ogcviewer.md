@@ -57,4 +57,93 @@ export function wmsLayer(layerName: string): TileLayer {
 }
 ```
 
+:::
+
 [Retour à la réalisation du projet ↩︎](/projects/creations/ogcviewer/realisation#wms-et-openlayers)
+
+## Backend Express
+
+::: code-group
+
+```javascript [app.js]
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+const graphRoutes = require('./routes/graph.routes'); // Importer les routes des graphiques
+
+app.use(cors());
+app.use(express.json());
+
+app.use('/api/graphs', graphRoutes); // Utiliser les routes des graphiques
+
+module.exports = app;
+```
+
+```javascript [db/db.js]
+const Database = require('better-sqlite3');
+const path = require('path');
+const fs = require("node:fs");
+
+const dataDir = path.resolve(__dirname, '../data');
+
+if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+}
+
+const dbPath = path.resolve(__dirname, '../data/database.db');
+const db = new Database(dbPath);
+
+try {
+    const sqlFile = fs.readFileSync('db/database.sql', 'utf-8');
+    db.exec(sqlFile);
+} catch (err) {
+    console.error('Erreur lors de l\'exécution du script SQL :', err.message);
+}
+
+module.exports = db;
+```
+
+```javascript [server.js]
+const app = require('./app');
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Serveur en écoute sur le port ${PORT}`);
+});
+```
+
+```javascript [models/graph.js]
+const db = require('../db/db'); // Importer la connexion à la base de données
+const tableName = 'graphs'; // Nom de la table
+
+exports.getAll = () => {
+    const stmt = db.prepare(`SELECT * FROM ${tableName}`);
+    return stmt.all();
+};
+```
+
+```javascript [controllers/graph.controller.js]
+const model = require('../models/graph'); // Importer le modèle
+
+exports.getAll = (req, res) => {
+    try {
+        const graphs = model.getAll();
+        res.json(graphs);
+    } catch (err) {
+        res.status(500).json({ error: 'Erreur serveur' });
+    }
+}
+```
+
+```javascript [routes/graph.routes.js]
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/graph.controller'); // Importer le contrôleur
+
+router.get('/', controller.getAll); // Route pour récupérer tous les graphiques
+```
+
+:::
+
+[Retour à la réalisation du projet ↩︎](/projects/creations/ogcviewer/realisation#faire-un-backend-avec-express)

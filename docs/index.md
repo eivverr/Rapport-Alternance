@@ -31,8 +31,8 @@ features:
     title: "Cartographie web"
     details: "Utilisation de la bibliothèque OpenLayers pour afficher des cartes interactives."
   - icon:
-      src: /icons/icon-flask.svg
+      src: /icons/icon-node-js.svg
     title: "Développement back-end"
-    details: "Développement d'API REST avec Flask et Python."
+    details: "Développement d'API REST avec Node.js/Express.js."
 ---
 

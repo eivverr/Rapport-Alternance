@@ -46,9 +46,12 @@ et de pouvoir afficher des tableaux de données et des graphiques sur les couche
 
 ## Missions
 
+Cette application étant assez dense, je ne vais pas lister toutes les missions que j'ai réalisées (il y en a beaucoup !), 
+je vais juste lister les plus importantes :
+
 - [Afficher une carte avec des couches de données de type **WMS**](/projects/creations/ogcviewer/realisation#afficher-une-carte-avec-des-couches-de-donnees-wms)
 - [Afficher un graphique sur les couches de données](/projects/creations/ogcviewer/realisation#afficher-un-graphique-sur-les-couches-de-donnees)
-- Afficher un tableau de données sur les couches de données
-- Afficher des informations sur les couches de données au clic
+- [Permettre de modifier/ajouter des graphiques](/projects/creations/ogcviewer/realisation#permettre-de-modifier-ajouter-des-graphiques)
+- [Connexion LDAP pour l'authentification des admins](/projects/creations/ogcviewer/realisation#connexion-ldap-pour-l-authentification-des-admins)
 
 [^1]: Un serveur **Apache** est un logiciel de serveur web libre et open source, qui permet de diffuser des pages web sur Internet.

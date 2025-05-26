@@ -40,7 +40,6 @@ export default defineConfig({
                         items: [
                             { text: 'Puzzle54', link: '/projects/creations/puzzle54/intro' },
                             { text: 'Script restauration', link: '/projects/creations/script-restauration' },
-                            { text: 'Restauration web', link: '/projects/creations/restauration-web/intro' },
                             { text: 'OGCviewer', link: '/projects/creations/ogcviewer/intro' }
                         ]
                     }
@@ -86,15 +85,6 @@ export default defineConfig({
                         ]
                     },
                     { text: 'Script restauration', link: '/projects/creations/script-restauration' },
-                    {
-                        text: 'Restauration web',
-                        collapsed: true,
-                        link: '/projects/creations/restauration-web/intro',
-                        items: [
-                            { text: 'Veille technologique', link: '/projects/creations/restauration-web/veille-techno' },
-                            { text: 'Réalisation', link: '/projects/creations/restauration-web/realisation' }
-                        ]
-                    },
                     {
                         text: 'OGCviewer',
                         collapsed: true,

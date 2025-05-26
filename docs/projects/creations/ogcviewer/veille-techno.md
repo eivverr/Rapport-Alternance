@@ -16,11 +16,18 @@ Je commence aussi à bien le maîtriser.
 Il me facilitera la création de l'interface de l'application cartographique.
 - **Tailwind CSS** car c'est un framework **CSS** qui permet de personnaliser facilement les styles de l'application.
 Et aussi car **PrimeVue** l'utilise pour ses composants (pas obligatoire mais c'est un plus).
+- **Express** car c'est un framework **Node.js** qui permet de créer un backend facilement et rapidement.
+Cela permet aussi d'avoir une uniformité dans les technologies utilisées.
 
 ### Vue.js
 
-J'ai déjà présenté **Vue.js** dans la partie [veille technologique](/projects/creations/restauration-web/veille-techno#vue-js-pour-le-frontend) 
-du projet [Restauration Web](/projects/creations/restauration-web/intro).
+<img style="margin: 0 auto" width="300px" src="/img/Vue_logo.png?url">
+
+[Vue.js](https://v3.vuejs.org/) est un framework[^2] **JavaScript** open-source pour construire des interfaces utilisateur et des applications **monopages**.
+Créé par **Evan You**, il est maintenu par lui et le reste des membres actifs de l'équipe principale travaillant sur le projet et son écosystème.
+
+Il est conçu pour être adaptable et peut être intégré dans des projets existants sans problème.
+Il utilise une approche réactive pour la gestion de l'état et permet de créer des composants réutilisables.
 
 ### Typescript
 
@@ -96,4 +103,11 @@ En revanche, pour les styles complexes, il est préférable d'utiliser du CSS pe
 </button>
 ```
 
+### Express
+
+[Express](https://expressjs.com/) est un framework [Node.js](https://nodejs.org/) qui permet de créer des applications web et des API facilement et rapidement.
+Il permet de créer des routes, de gérer les requêtes et les réponses, de gérer les sessions, etc.
+
 [^1]: **UI** = User Interface *(Interface Utilisateur pour les non anglophones)*
+
+[^2]: Le terme **framework** désigne un ensemble d'outils et de bibliothèques qui facilitent le développement d'applications en fournissant une structure de base et des fonctionnalités prêtes à l'emploi.
