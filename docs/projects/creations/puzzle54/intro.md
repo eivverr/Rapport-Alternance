@@ -11,7 +11,7 @@ une bibliothèque **JavaScript open source[^1]** qui permet de créer des **cart
 
 ## Objectif du projet
 
-L'objectif de ce projet est d'être un **puzzle en ligne**, où l'utilisateur doit **reconstituer** une carte du département de Meurthe-et-Moselle en plaçant les **cantons** à leur place sur la carte.
+L'objectif de ce projet est d'être un **puzzle en ligne**, où l'utilisateur doit **reconstituer** une carte du département de Meurthe-et-Moselle en plaçant les **cantons**[^2] à leur place sur la carte.
 Il informe également l'utilisateur sur les **conseillers** des cantons du département.
 
 Ce projet a pour but d'être une manière **ludique** et **interactive** de découvrir les cantons du département de Meurthe-et-Moselle ainsi que les conseillers qui y sont élus.
@@ -30,3 +30,5 @@ Mes missions sur ce projet ont été les suivantes :
 
 [^1]: La désignation **open source**, s'applique aux logiciels dont la licence respecte des critères précisément établis par l'[Open Source Initiative](https://fr.wikipedia.org/wiki/Open_Source_Initiative),
 c'est-à-dire les possibilités de **libre redistribution**, d'**accès au code source** et de **création de travaux dérivés**.
+
+[^2]: Un canton est une division administrative française, qui regroupe plusieurs communes.

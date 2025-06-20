@@ -27,7 +27,9 @@ pour voir la différence entre les deux :
 
 ### WMS et OpenLayers
 
-Pour afficher une carte avec des couches de données **WMS** dans **OpenLayers**, il faut créer un objet `layer.Tile` avec une source de type `source.TileWMS`.
+Pour afficher une carte avec des couches de données **WMS** dans **OpenLayers**, il faut créer un objet `layer.Tile` avec une source de type `source.TileWMS`,
+ou alors un objet `layer.Image` avec une source de type `source.ImageWMS`.
+Cela dépend de si on veut afficher une couche de tuiles ou une couche d'image.
 Cet objet a besoins du nom de la couche à afficher, ainsi que l'URL du serveur **WMS**.
 On peut aussi ajouter des paramètres comme le nom du projet et du dépôt (important pour le projet **Opendata**, car il est mis en ligne via **Lizmap**).
 
@@ -103,9 +105,33 @@ Voici un [exemple de code](/annexe/codes/ogcviewer#faire-un-backend-avec-express
 Maintenant, on peut faire des requêtes HTTP via le frontend pour récupérer les données des graphiques.
 On peut aussi ajouter des routes pour ajouter, modifier ou supprimer des graphiques.
 
+## Imprimer la carte
+
+Une des fonctionnalités demandées et importantes pour l'application est de pouvoir imprimer la carte.
+Et oui, car certaines personnes préfèrent encore avoir une version papier de la carte plutôt que de l'afficher sur un écran.
+
+Pour cela, j'ai essayé plusieurs bibliothèques comme **html2pdf**, **html-to-img**, **html-to-svg**, **jsPdf** avec **html2canvas**, 
+mais aussi **puppeteer** ou **playwright** pour générer un PDF en backend.
+Mais aucune de ces bibliothèques ne permettait d'imprimer la carte correctement et de manière satisfaisante.
+
+On s'est donc contenté de faire une impression basique de la carte avec le la méthode `window.print()` directement dans le navigateur.
+Cela donne un rendu correct, mais pas parfait (notamment sur Chrome, mais aussi, car les textes dans la carte restent flou).
+Avec cette méthode, on peut choisir le style d'impression grâce à la règle CSS `@media print` et ainsi masquer les éléments qui ne sont pas nécessaires à l'impression.
+
+Le seul problème avec cette méthode, c'est que si l'élément imprimer est trop grand, il sera découpé en plusieurs pages.
+Pour cela, je force l'impression en A3 avec la règle CSS `@page { size: A3 landscape; }`.
+Puis dans une modal/popup, je fais un container avec la taille de la page A3, et j'affiche la carte à l'intérieur.
+
+Sauf que certains écrans sont plus petits que la taille de la page A3, donc on utilise la règle CSS `transform: scale(valeur_scale);`
+pour réduire la taille de la carte et l'adapter à l'écran.
+Cela permet à l'utilisateur de voir à quoi ressemblera la carte imprimée avant de lancer l'impression.
+
+[Code de la démonstration](/annexe/codes/ogcviewer#imprimer-la-carte) et le résultat :
+<img style="margin: 0 auto" src="/img/ogcviewer-pdf-map.png?url">
+
 ## Connexion LDAP pour l'authentification des admins
 
-## Demo du 26/05/2025
+## Demo du 20/06/2025
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
     <source src="/video/demo-ogcviewer.mp4" type="video/mp4">

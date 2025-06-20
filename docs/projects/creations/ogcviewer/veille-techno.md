@@ -29,6 +29,29 @@ Créé par **Evan You**, il est maintenu par lui et le reste des membres actifs 
 Il est conçu pour être adaptable et peut être intégré dans des projets existants sans problème.
 Il utilise une approche réactive pour la gestion de l'état et permet de créer des composants réutilisables.
 
+Dans **Vue.js**, les composants sont des blocs de construction de l'interface utilisateur.
+Ils sont définis par des fichiers `.vue` qui contiennent le code HTML, CSS et JavaScript du composant.
+
+Voici un exemple de composant simple :
+```vue
+<template>
+    <div class="hello">
+        <h1>{{ message }}</h1>
+    </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+const message = ref('Hello, Vue.js!')
+</script>
+
+<style scoped>
+.hello {
+    color: blue;
+}
+</style>
+```
+
 ### Typescript
 
 <img style="margin: 0 auto" width="100px" src="/img/Typescript_logo.svg?url">

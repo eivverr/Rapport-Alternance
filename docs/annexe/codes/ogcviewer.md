@@ -147,3 +147,56 @@ router.get('/', controller.getAll); // Route pour récupérer tous les graphique
 :::
 
 [Retour à la réalisation du projet ↩︎](/projects/creations/ogcviewer/realisation#faire-un-backend-avec-express)
+
+## Imprimer la carte
+
+```vue
+<script setup lang="ts">
+import {ref} from 'vue'
+
+const container = ref<HTMLDivElement | null>(null)
+const scale = ref(1)
+const printableWidth = 1587
+const printableHeight = 1123
+
+const containerWidth = container.value.clientWidth
+const containerHeight = container.value.clientHeight
+
+const scaleX = containerWidth / printableWidth
+const scaleY = containerHeight / printableHeight
+
+scale.value = Math.min(scaleX, scaleY)
+</script>
+
+<template>
+    <Dialog
+        v-model:visible="dialogPdfStore.visible"
+        modal
+        maximizable
+        header="Impression PDF"
+        :style="{ width: '60vw' }"
+        :contentStyle="{ height: '60vh' }"
+        :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
+        class="dialog-pdf"
+    >
+        <div
+            ref="container"
+            id="printable-page"
+            class="relative w-full h-full overflow-hidden bg-stone-400"
+        >
+            <div
+                class="absolute top-0 left-0 origin-top-left p-4"
+                :style="{
+                width: '1587px',
+                height: '1123px',
+                transform: `scale(${scale})`,
+            }"
+            >
+                <!-- Contenu d'impression -->
+            </div>
+        </div>
+    </Dialog>
+</template>
+```
+
+[Retour à la réalisation du projet ↩︎](/projects/creations/ogcviewer/realisation#imprimer-la-carte)

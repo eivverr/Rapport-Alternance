@@ -1,6 +1,6 @@
 # Maptour château de Lunèville
 
-<CustomContainer type="danger">
+<CustomContainer type="warning">
 <p>
 Pour une raison encore inconnue, le projet ne fonctionne plus correctement. Le projet ne zoom plus sur les points d'intérêt.
 </p>
