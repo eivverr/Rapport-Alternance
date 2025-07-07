@@ -115,7 +115,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/WashiFR/Rapport-Alternance' },
+            { icon: 'github', link: 'https://github.com/eivverr/Rapport-Alternance' },
             { icon: 'vitepress', link: 'https://vitepress.dev' }
         ],
 

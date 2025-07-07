@@ -65,4 +65,4 @@ Vous trouverez ici la liste des liens qui se trouvent dans le rapport.
 
 ## Dépot GitHub
 
-- Rapport : [github.com/WashiFR/Rapport-Alternance](https://github.com/WashiFR/Rapport-Alternance)
+- Rapport : [github.com/eivverr/Rapport-Alternance](https://github.com/eivverr/Rapport-Alternance)

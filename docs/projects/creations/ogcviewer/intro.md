@@ -1,12 +1,5 @@
 # OGCViewer
 
-<CustomContainer type="warning">
-<p>
-Ce projet est en cours de développement et n'est pas encore terminé. 
-Les images/vidéos ne représentent pas la version finale du projet.
-</p>
-</CustomContainer>
-
 ## Introduction
 
 Suite à la customisation de [l'atlas départemental de Meurthe-et-Moselle](/projects/upgrades/atlas), 
