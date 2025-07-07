@@ -53,6 +53,5 @@ je vais juste lister les plus importantes :
 - [Afficher un graphique sur les couches de données](/projects/creations/ogcviewer/realisation#afficher-un-graphique-sur-les-couches-de-donnees)
 - [Permettre de modifier/ajouter des graphiques](/projects/creations/ogcviewer/realisation#permettre-de-modifier-ajouter-des-graphiques)
 - [Imprimer la carte](/projects/creations/ogcviewer/realisation#imprimer-la-carte)
-- [Connexion LDAP pour l'authentification des admins](/projects/creations/ogcviewer/realisation#connexion-ldap-pour-l-authentification-des-admins)
 
 [^1]: Un serveur **Apache** est un logiciel de serveur web libre et open source, qui permet de diffuser des pages web sur Internet.

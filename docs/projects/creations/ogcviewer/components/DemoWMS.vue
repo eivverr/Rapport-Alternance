@@ -1,7 +1,8 @@
 <script setup>
 import Map from "ol/Map";
-import TileWMS from "ol/source/TileWMS";
 import TileLayer from "ol/layer/Tile";
+import ImageLayer from "ol/layer/Image";
+import ImageWMS from "ol/source/ImageWMS";
 import View from "ol/View";
 import {fromLonLat} from "ol/proj";
 import OSM from "ol/source/OSM";
@@ -9,19 +10,18 @@ import OSM from "ol/source/OSM";
 const id = "demo-wms";
 
 function wmsSource(layerName) {
-    return new TileWMS({
+    return new ImageWMS({
         url: 'https://webcarto.infogeo54.fr/index.php/lizmap/service',
         params: {
             LAYERS: layerName,
             repository: 'opendata',
             project: 'opendata',
-            TILED: true,
         }
     })
 }
 
 function wmsLayer(layerName) {
-    return new TileLayer({
+    return new ImageLayer({
         source: wmsSource(layerName),
         opacity: 1,
     })

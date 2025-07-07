@@ -33,24 +33,22 @@ function initOpenLayersMap() {
 ```
 
 ```typescript [wms.ts]
-import TileWMS from 'ol/source/TileWMS'
-import TileLayer from 'ol/layer/Tile'
+import ImageLayer from 'ol/layer/Image'
+import ImageWMS from 'ol/source/ImageWMS'
 
-function wmsSource(layerName: string): TileWMS {
-    return new TileWMS({
+function wmsSource(layerName) {
+    return new ImageWMS({
         url: 'https://webcarto.infogeo54.fr/index.php/lizmap/service',
         params: {
             LAYERS: layerName,
             repository: 'opendata',
             project: 'opendata',
-            TILED: true,
-            // ...Autres paramètres si besoin
         }
     })
 }
 
-export function wmsLayer(layerName: string): TileLayer {
-    return new TileLayer({
+function wmsLayer(layerName) {
+    return new ImageLayer({
         source: wmsSource(layerName),
         opacity: 1,
     })

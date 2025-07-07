@@ -129,9 +129,7 @@ Cela permet à l'utilisateur de voir à quoi ressemblera la carte imprimée avan
 [Code de la démonstration](/annexe/codes/ogcviewer#imprimer-la-carte) et le résultat :
 <img style="margin: 0 auto" src="/img/ogcviewer-pdf-map.png?url">
 
-## Connexion LDAP pour l'authentification des admins
-
-## Demo du 20/06/2025
+## Demo du 07/07/2025 (version 1.0.0)
 
 <video controls muted autoplay loop style="margin: 0 auto; max-width: 100%">
     <source src="/video/demo-ogcviewer.mp4" type="video/mp4">
