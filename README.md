@@ -10,5 +10,5 @@ Ce site est un support pour mon rapport d'alternance, il contient des informatio
 > [!NOTE]
 > - **Entreprise/Service** : Conseil Départemental de Meurthe-et-Moselle
 > - **Alternant** : Weier Loris
-> - **Maître d'apprentissage** : Hervé Vitoux
+> - **Maître d'apprentissage** : Vitoux Hervé
 > - **Tuteur universitaire** : Boumaza Amine
