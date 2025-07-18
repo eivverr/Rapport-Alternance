@@ -26,7 +26,7 @@ En voici un petit exemple :
 <ul>
     <li><strong>Entreprise/Service</strong> : Conseil Départemental de Meurthe-et-Moselle</li>
     <li><strong>Alternant</strong> : Weier Loris</li>
-    <li><strong>Maître d'apprentissage</strong> : Hervé Vitoux</li>
+    <li><strong>Maître d'apprentissage</strong> : Vitoux Hervé</li>
     <li><strong>Tuteur universitaire</strong> : Boumaza Amine</li>
 </ul>
 </CustomContainer>
