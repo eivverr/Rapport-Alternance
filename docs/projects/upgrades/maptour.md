@@ -1,3 +1,8 @@
+---
+prev: "Projets améliorés | Frelon signalement"
+next: "Projets améliorés | Atlas départemental"
+---
+
 # Maptour château de Lunèville
 
 <CustomContainer type="warning">
@@ -113,7 +118,7 @@ const zoomLevels = {
 ```
 
 De plus, avec **Lizmap**, il ne suffit pas juste de mettre le niveau de zoom que l'on souhaite (ce qui serait trop simple),
-mais il faut mettre l'**index** du niveau de zoom dans la liste des niveaux de zoom de la carte.
+mais il faut donc mettre l'**index** du niveau de zoom dans la liste des niveaux de zoom de la carte.
 
 Un exemple vous aidera à mieux comprendre ce que je veux dire :
 
@@ -125,7 +130,7 @@ lizMap.map.zoomTo(5000);
 lizMap.map.zoomTo(8);
 ```
 
-Il me fallait donc une fonction qui permet en fonction du niveau de zoom du point d'intérêt récupéré dans l'api du projet, 
+Il me fallait donc une fonction qui permet, en fonction du niveau de zoom du point d'intérêt récupéré dans l'api du projet, 
 de trouver l'**index** du niveau de zoom dans la liste des niveaux de zoom de la carte.
 Ensuite, il ne reste plus qu'à appeler cette fonction lors d'un clic sur le bouton suivant ou précédent.
 
@@ -177,8 +182,8 @@ mais j'ai simplement appelé cette fonction au lancement de la carte.
 
 ### Réglage du système de navigation
 
-Le système de navigation réalisé par le précédent alternant n'était pas **tout à fait fonctionnel**, quand on était sur le premier point d'intérêt et qu'on cliquait sur le bouton précédent,
-rien ne se passait, et quand on était sur le dernier point d'intérêt et qu'on cliquait sur le bouton suivant, rien ne se passait non plus.
+Le système de navigation réalisé par le précédent alternant n'était pas **tout à fait fonctionnel**, quand on était sur le premier point d'intérêt et que l'on cliquait sur le bouton précédent,
+rien ne se passait, et quand on était sur le dernier point d'intérêt et que l'on clique sur le bouton suivant, rien ne se passait non plus.
 
 J'ai donc corrigé ces fonctions pour qu'elles fonctionnent correctement, et j'ai également corrigé les conditions pour remettre l'ordre de passage à 1 si on dépasse le dernier point d'intérêt,
 et à la dernière position si sur le premier point d'intérêt, on clique sur le bouton précédent.

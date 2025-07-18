@@ -1,3 +1,8 @@
+---
+prev: "Projets améliorés | Maptour"
+next: "Projets créés | Puzzle54"
+---
+
 # Atlas départemental de Meurthe-et-Moselle
 
 <CustomContainer type="info">

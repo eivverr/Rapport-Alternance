@@ -1,3 +1,8 @@
+---
+prev: "OGCViewer | Introduction"
+next: "OGCViewer | Réalisation"
+---
+
 <script setup>
 import ExamplePrimevue from './components/ExamplePrimevue.vue'
 </script>

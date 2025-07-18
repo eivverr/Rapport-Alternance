@@ -1,3 +1,8 @@
+---
+prev: "Annexe | Liens"
+next: "Code | Puzzle54"
+---
+
 # Codes du projet Atlas
 
 ## Actualisation du tableau et décoche les autres checkbox

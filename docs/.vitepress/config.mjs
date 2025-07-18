@@ -58,7 +58,7 @@ export default defineConfig({
             {
                 text: 'Introduction',
                 items: [
-                    { text: 'Présentation du service', link: '/intro/presentation' },
+                    { text: "Présentation de l'entreprise", link: '/intro/presentation' },
                     { text: 'Lizmap', link: '/intro/lizmap' }
                 ]
             },
@@ -102,7 +102,7 @@ export default defineConfig({
                     { text: 'Liens', link: '/annexe/liens' },
                     {
                         text: 'Codes',
-                        collapsed: false,
+                        collapsed: true,
                         items: [
                             { text: 'Atlas départemental', link: '/annexe/codes/atlas' },
                             { text: 'Puzzle54', link: '/annexe/codes/puzzle54' },

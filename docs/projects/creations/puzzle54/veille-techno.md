@@ -1,3 +1,8 @@
+---
+prev: "Puzzle54 | Introduction"
+next: "Puzzle54 | Réalisation"
+---
+
 <script setup>
 import OpenlayersDemo from './components/OpenlayersDemo.vue';
 </script>
@@ -18,7 +23,8 @@ qui ressemble à ce que l'on voulait faire.
 Il me serra utile pour me servir de référence. 
 
 Ce projet a été réalisé avec la bibliothèque **OpenLayers**, c'est d'ailleurs ce qu'utilise **Lizmap** pour afficher les cartes, 
-ce qui pourrait potentiellement permettre de surcharger un projet **Lizmap** pour ajouter une carte **OpenLayers** (spoiler : non, ça ne fonctionne pas).
+ce qui aurait pû potentiellement permettre de surcharger un projet **Lizmap** pour ajouter une carte **OpenLayers**.
+Malheureusement, cela ne fonctionne pas.
 
 On décide donc d'utiliser **OpenLayers** pour réaliser le projet.
 
@@ -36,7 +42,7 @@ qui utilise maintenant [Leaflet](https://leafletjs.com/), une autre bibliothèqu
 
 **OpenLayers** est une bibliothèque **très complète**, elle permet de réaliser des cartes **interactives** avec des **données géographiques** (GeoRSS, KML, GML, GeoJSON, etc.).
 Le logiciel possède également une [API](https://openlayers.org/en/latest/apidoc/) et une [documentation](https://openlayers.org/doc/) très complète, 
-ainsi que de nombreux [exemples](https://openlayers.org/en/latest/examples/) pour apprendre à l'utiliser, ce qui facilite **énormément** son utilisation (contrairement à **Lizmap**...).
+ainsi que de nombreux [exemples](https://openlayers.org/en/latest/examples/) pour apprendre à l'utiliser, ce qui facilite **énormément** son utilisation.
 En plus ça tombe bien, les données de l'**api** sont en GeoJSON[^2].
 
 ### Apprendre à utiliser OpenLayers

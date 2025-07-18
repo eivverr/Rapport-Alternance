@@ -1,3 +1,8 @@
+---
+prev: "Projets améliorés | Atlas départemental"
+next: "Puzzle54 | Veille techno"
+---
+
 # Puzzle54
 
 <CustomContainer type="info">

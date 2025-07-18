@@ -1,3 +1,8 @@
+---
+prev: "Codes | Puzzle54"
+next: "Codes | OGCviewer"
+---
+
 # Script de restauration des tables de la base de données
 
 ```shell

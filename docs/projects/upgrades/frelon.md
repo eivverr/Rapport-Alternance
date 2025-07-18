@@ -1,3 +1,8 @@
+---
+prev: "Introduction | Lizmap"
+next: "Projets améliorés | Maptour"
+---
+
 # Frelon signalement 54
 
 <CustomContainer type="info">

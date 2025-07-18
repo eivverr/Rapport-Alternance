@@ -1,3 +1,7 @@
+---
+prev: "Codes | Script restauration"
+---
+
 # Codes du projet OGCviewer
 
 ## Afficher une carte avec des couches de données WMS

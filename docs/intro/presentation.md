@@ -1,6 +1,10 @@
-# Présentation du service
+---
+next: 'Introduction | Lizmap'
+---
 
-Le **Conseil départemental de Meurthe-et-Moselle** est une **collectivité locale**[^1], comme la commune et le conseil régional. 
+# Présentation de l'entreprise
+
+Le **Conseil départemental de Meurthe-et-Moselle** est une **collectivité territoriale**[^1], comme la commune et le conseil régional. 
 Son champ d'action est le département.
 
 <img style="margin: 0 auto;" src="/img/meurthe-et-moselle.png?url" width="200">
@@ -27,7 +31,7 @@ Certains sont partagés avec d'autres collectivités locales comme les villes ou
 
 ## Les services départementaux
 
-Pour s'occuper au mieux des différentes thématiques dans lesquelles il est engagé, le Conseil Départemental est divisée en une multitude de directions, rattachées à un des trois grands pôles :
+Pour s'occuper au mieux des différentes thématiques dans lesquelles il est engagé, le Conseil Départemental est divisée en une multitude de directions, rattachées à trois grandes directions :
 
 - **Ressources** : Finances, Ressources humaines, Logistique, Immobilier, Systèmes d'Information.
 - **Solidarités** : Autonomie, Enfance et famille, Action sociale et insertion.
@@ -37,9 +41,9 @@ Chaque direction est elle-même divisée en services départementaux qui se foca
 
 <iframe src="/pdf/Org_General.pdf" width="100%" height="500px"></iframe>
 
-## Le service SIG du pôle Développement
+## Le service SIG de la direction du Développement
 
-Le service SIG est chargé de mettre à disposition des **outils cartographiques** tels que des **cartes**, 
+Je travaille pour le service SIG qui est chargé de mettre à disposition des **outils cartographiques** tels que des **cartes**, 
 des **jeux de données** ou des **applications web** à destination des autres services du Conseil Départemental, des communes du département de Meurthe-et-Moselle ou du grand public.
 
 Vous retrouverez toutes leurs réalisations publiques sur le site [webcarto.infogeo54.fr](https://webcarto.infogeo54.fr/).

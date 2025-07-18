@@ -1,3 +1,8 @@
+---
+prev: "Codes | Atlas"
+next: "Codes | Script restauration"
+---
+
 # Codes du projet Puzzle54
 
 ## Afficher les données GeoJSON sur la carte

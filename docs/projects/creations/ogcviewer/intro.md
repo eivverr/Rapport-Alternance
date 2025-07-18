@@ -1,3 +1,8 @@
+---
+prev: "Projets créés | Script restauration"
+next: "OGCViewer | Veille techno"
+---
+
 # OGCViewer
 
 ## Introduction
@@ -13,7 +18,7 @@ Mon maître d'apprentissage a trouvé un projet qui correspondait aux attentes :
 
 <img style="margin: 0 auto" width="150px" src="/img/mviewer-logo.png?url">
 
-**Mviewer** est une application cartographique initiée et développée par la **Région Bretagne** (*pas mal non ? C'est français !*). 
+**Mviewer** est une application cartographique initiée et développée par la **Région Bretagne**. 
 Le code source de cette application est librement réutilisable depuis 2014. 
 De nombreuses collectivités mais également des entreprises, le secteur de la recherche et de l’enseignement utilisent librement cette application et participent à son évolution.
 

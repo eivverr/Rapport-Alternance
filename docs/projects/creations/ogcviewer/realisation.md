@@ -1,3 +1,8 @@
+---
+prev: "OGCViewer | Veille techno"
+next: "Annexe | Liens"
+---
+
 <script setup>
 import DemoWMS from './components/DemoWMS.vue';
 import DemoECharts from './components/DemoECharts.vue';
@@ -7,9 +12,9 @@ import DemoECharts from './components/DemoECharts.vue';
 
 ## Afficher une carte avec des couches de données WMS
 
-### WMS kézako ?
+### WMS qu'est-ce que c'est ?
 
-Bon déjà, c'est quoi un **WMS** ? Le **Web Map Service** est un standard de l'**OGC** ([Open Geospatial Consortium](https://fr.wikipedia.org/wiki/Open_Geospatial_Consortium)) 
+Qu'est-ce qu'un web service **WMS** ? Le **Web Map Service** est un standard de l'**OGC** ([Open Geospatial Consortium](https://fr.wikipedia.org/wiki/Open_Geospatial_Consortium)) 
 qui permet de servir des cartes géographiques sur le web.
 Il permet de récupérer des **images** de cartes à partir de données géographiques stockées sur un serveur.
 
@@ -41,7 +46,7 @@ Ensuite, il faut ajouter cette couche à la carte.
 
 ### Récupérer toutes les couches WMS disponibles
 
-On a vu comment afficher une couche **WMS**, mais comment savoir quelles couches sont disponibles sur le serveur ?
+Nous avons vu comment afficher une couche **WMS**, mais comment savoir quelles couches sont disponibles sur le serveur ?
 Pour ça, il faut faire une requête **fetch** sur l'URL du serveur **WMS** avec le paramètre `REQUEST=GetCapabilities`.
 Cela va renvoyer un fichier **XML** avec toutes les couches disponibles sur le serveur.
 Il faut ensuite parser ce fichier **XML** pour récupérer les noms des couches et les afficher dans une liste.
@@ -74,7 +79,7 @@ Voici un exemple de graphique avec **ECharts** ([code](https://echarts.apache.or
 
 <DemoECharts />
 
-Comme je l'ai dit plus haut, les couches **WMS** ne contiennent que des images et aucune données.
+Comme abordé plus haut, les couches **WMS** ne contiennent que des images et aucune données.
 Pour en avoir, il faut donc utiliser le **WFS** pour récupérer les données de la couche au format **JSON** ou **GeoJSON**.
 J'ai déjà expliqué comment faire dans le projet [Puzzle54](/projects/creations/puzzle54/intro) dans la partie 
 [Afficher les données GeoJSON sur la carte](/projects/creations/puzzle54/realisation#afficher-les-donnees-geojson-sur-la-carte).

@@ -1,3 +1,8 @@
+---
+prev: "Projets créés | Puzzle54"
+next: "Projets créés | OGCviewer"
+---
+
 # Script de restauration des tables de la base de données
 
 Un de mes collègues m'a demandé de créer un script **bash**[^1] permettant de restaurer des données ou une structure de table à partir d'un fichier de sauvegarde.
